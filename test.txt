@@ -1,7 +1,5 @@
-<<<<<<< HEAD
 test
 hermano
 2nd test
-=======
 test2
->>>>>>> 61162ff345665c2ab09d5b9e0c2040f877f53c08
+test3
