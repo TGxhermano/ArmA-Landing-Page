@@ -18,7 +18,7 @@
         }
     }
 
-    $secret = $SECRET_TOKEN;
+    $secret = getenv('SECRET_TOKEN');
 
     $headers = getallheaders();
     $hubSignature = $headers['X-Hub-Signature'];
