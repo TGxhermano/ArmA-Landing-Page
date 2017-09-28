@@ -56,8 +56,13 @@ p {
   color: fade-out(white, .3);
 }
 
-#svg-logo {
-  fill: $theme-primary; 
+.svg-icon {
+  width: 64px;
+  height: 64px;
+}
+
+.svg-logo {
+  fill: $theme-primary;
 }
 
 section {
