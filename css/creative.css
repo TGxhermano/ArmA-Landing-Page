@@ -112,6 +112,22 @@ body {
       #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover,
       #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
         background-color: transparent; }
+  #mainNav .navbar-nav span.nav-item a.nav-link:focus,
+  #mainNav .navbar-nav span.nav-item a.nav-link {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222; }
+    #mainNav .navbar-nav span.nav-item a.nav-link:focus:hover,
+    #mainNav .navbar-nav span.nav-item a.nav-link:hover {
+      color: #2a5ea6; }
+    #mainNav .navbar-nav span.nav-item a.nav-link:focus.active,
+    #mainNav .navbar-nav span.nav-item a.nav-link.active {
+      color: #2a5ea6 !important;
+      background-color: transparent; }
+      #mainNav .navbar-nav span.nav-item a.nav-link:focus.active:hover,
+      #mainNav .navbar-nav span.nav-item a.nav-link.active:hover {
+        background-color: transparent; }
   @media (min-width: 992px) {
     #mainNav {
       border-color: rgba(255, 255, 255, 0.3);
@@ -126,6 +142,12 @@ body {
         #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
         #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
           color: white; }
+      #mainNav .navbar-nav > span.nav-item > a.nav-link,
+      #mainNav .navbar-nav > span.nav-item > a.nav-link:focus {
+        color: rgba(255, 255, 255, 0.7); }
+        #mainNav .navbar-nav > span.nav-item > a.nav-link:hover,
+        #mainNav .navbar-nav > span.nav-item > a.nav-link:focus:hover {
+          color: white; }
       #mainNav.navbar-shrink {
         border-color: rgba(34, 34, 34, 0.05);
         background-color: white; }
@@ -139,6 +161,12 @@ body {
           color: #222222; }
           #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
           #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+            color: #2a5ea6; }
+        #mainNav.navbar-shrink .navbar-nav > span.nav-item > a.nav-link,
+        #mainNav.navbar-shrink .navbar-nav > span.nav-item > a.nav-link:focus {
+          color: #222222; }
+          #mainNav.navbar-shrink .navbar-nav > span.nav-item > a.nav-link:hover,
+          #mainNav.navbar-shrink .navbar-nav > span.nav-item > a.nav-link:focus:hover {
             color: #2a5ea6; } }
 
 header.masthead {
