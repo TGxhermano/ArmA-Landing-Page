@@ -5,9 +5,9 @@ header.masthead {
   min-height: auto;
   text-align: center;
   color: white;
-  background-image: url('../img/header.jpg');
-  background-position: center;
-  background-attachment: fixed;
+  //background-image: url('../img/header.jpg');
+  //background-position: center;
+  //background-attachment: fixed;
   @include background-cover;
   .header-content {
     position: relative;
