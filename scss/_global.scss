@@ -90,6 +90,7 @@ body {
   -webkit-tap-highlight-color: $gray-darker;
 }
 
+// styles for the background video in index.html
 #background-video {
   position: fixed;
   top: 50%;
@@ -99,6 +100,7 @@ body {
   width: auto;
   height: auto;
   z-index: -100;
+  // fallback for older browsers
   -ms-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
