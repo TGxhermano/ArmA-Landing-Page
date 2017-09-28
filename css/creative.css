@@ -55,7 +55,13 @@ p {
   height: 64px; }
 
 .svg-logo {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
   fill: #2a5ea6; }
+
+.svg-icon:hover .svg-logo {
+  fill: #20477d; }
 
 section {
   padding: 30px 0; }

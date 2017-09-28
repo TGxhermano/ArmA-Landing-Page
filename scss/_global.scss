@@ -62,7 +62,12 @@ p {
 }
 
 .svg-logo {
+  @include transition-all;
   fill: $theme-primary;
+}
+.svg-icon:hover .svg-logo{
+  fill: darken($theme-primary, 10%);
+
 }
 
 section {
