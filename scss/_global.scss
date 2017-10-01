@@ -65,8 +65,14 @@ p {
   @include transition-all;
   fill: $theme-primary;
 }
-.svg-icon:hover .svg-logo{
+.svg-icon:hover .svg-logo {
   fill: darken($theme-primary, 10%);
+
+  transform:scale(1.5); 
+  -webkit-transform:scale(1.5); 
+  -moz-transform:scale(1.5); 
+  -ms-transform:scale(1.5); 
+  -o-transform:scale(1.5);
 
 }
 
