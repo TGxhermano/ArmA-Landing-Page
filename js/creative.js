@@ -55,9 +55,8 @@
   });
 
   // Workaround for making the main logo load if user refreshed the page and is scrolled down for more than 300 pixels
-if($("#mainNav").offset().top > 300) {
-  $(window).onload(function(){
-
+  if($("#mainNav").offset().top > 300) {
+    $(window).onload(function(){
   })};
 
 
