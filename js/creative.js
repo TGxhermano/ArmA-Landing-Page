@@ -31,10 +31,8 @@
   $(window).scroll(function() {
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-shrink");
-      $("#mainLogo").addClass("mainLogo-scaled");
     } else {
       $("#mainNav").removeClass("navbar-shrink");
-      $("#mainLogo").removeClass("mainLogo-scaled");
     }
     if($("#mainNav").offset().top > 200) {
       $(".navbar-left").addClass("navbar-left-expand");
@@ -55,6 +53,13 @@
       $("#header-content").removeClass("mainLogo-docked");
     }
   });
+
+  // Workaround for making the main logo load if user refreshed the page and is scrolled down for more than 300 pixels
+if($("#mainNav").offset().top > 300) {
+  $(window).onload(function(){
+
+  })};
+
 
   // Scroll reveal calls
   window.sr = ScrollReveal();
