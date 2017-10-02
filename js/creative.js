@@ -43,6 +43,12 @@
       $(".navbar-left").removeClass("navbar-left-expand");
       $(".navbar-right").removeClass("navbar-right-expand");
     }
+    if($("#mainNav").offset().top > 300) {
+      $("#mainLogo").addClass("mainLogo-scaled");
+    }
+    else {
+      $("#mainLogo").removeClass("mainLogo-scaled");
+    }
     if($("#mainNav").offset().top > 435) {
       $("#header-content").addClass("mainLogo-docked");
     } else {
