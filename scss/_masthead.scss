@@ -11,10 +11,12 @@ header.masthead {
   @include background-cover;
   .header-content {
     position: relative;
+    pointer-events: none;
     width: 100%;
     padding: 150px 15px 100px;
     text-align: center;
     .header-content-inner {
+      pointer-events: none;
       h1 {
         font-size: 30px;
         font-weight: 700;

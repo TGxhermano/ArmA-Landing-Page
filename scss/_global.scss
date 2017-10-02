@@ -79,7 +79,54 @@ p {
   filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
   -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
   -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
-  }
+}
+
+.mainLogo-scaled {
+  transform:scale(0.25) !important; 
+  -webkit-transform:scale(0.25) !important; 
+  -moz-transform:scale(0.25) !important; 
+  -ms-transform:scale(0.25) !important; 
+  -o-transform:scale(0.25) !important;
+}
+
+.mainLogo-docked {
+  position: fixed !important;
+  top: 50px !important;
+}
+
+.navbar-left {
+  @include transition-all;
+  transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
+}
+
+.navbar-right {
+  @include transition-all;
+  transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
+}
+
+.navbar-left-expand {
+  transform: translateX(-100px);
+  -webkit-transform: translateX(-100px);
+  -moz-transform: translateX(-100px);
+  -ms-transform: translateX(-100px);
+  -o-transform: translateX(-100px);
+}
+
+.navbar-right-expand {
+  transform: translateX(125px);
+  -webkit-transform: translateX(125px);
+  -moz-transform: translateX(125px);
+  -ms-transform: translateX(125px);
+  -o-transform: translateX(125px);
+}
 
 section {
   padding: 30px 0;
@@ -132,4 +179,19 @@ body {
   transform: translateX(-50%) translateY(-50%);
   background: url(img/header.jpg) no-repeat;
   background-size: cover; 
+}
+
+#mainLogo {
+  @include transition-all;
+  position: relative;
+  transform:scale(1); 
+  -webkit-transform:scale(1); 
+  -moz-transform:scale(1); 
+  -ms-transform:scale(1); 
+  -o-transform:scale(1);
+  pointer-events: all;
+}
+
+#header-content {
+  z-index: 10000;
 }

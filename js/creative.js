@@ -27,11 +27,26 @@
   });
 
   // Collapse the navbar when page is scrolled
+  // Dock logo to navbar when page is scrolled
   $(window).scroll(function() {
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-shrink");
+      $("#mainLogo").addClass("mainLogo-scaled");
     } else {
       $("#mainNav").removeClass("navbar-shrink");
+      $("#mainLogo").removeClass("mainLogo-scaled");
+    }
+    if($("#mainNav").offset().top > 200) {
+      $(".navbar-left").addClass("navbar-left-expand");
+      $(".navbar-right").addClass("navbar-right-expand");
+    } else {
+      $(".navbar-left").removeClass("navbar-left-expand");
+      $(".navbar-right").removeClass("navbar-right-expand");
+    }
+    if($("#mainNav").offset().top > 435) {
+      $("#header-content").addClass("mainLogo-docked");
+    } else {
+      $("#header-content").removeClass("mainLogo-docked");
     }
   });
 
@@ -51,6 +66,11 @@
     scale: 0.3,
     distance: '0px'
   }, 300);
+  sr.reveal('.sr-mainLogo', {
+    duration: 600,
+    scale: 0.3,
+    distance: '0px'
+  });
 
   // Magnific popup calls
   $('.popup-gallery').magnificPopup({
