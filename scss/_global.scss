@@ -66,7 +66,7 @@ p {
   fill: $theme-primary;
 }
 .svg-icon:hover .svg-logo {
-  fill: darken($theme-primary, 10%);
+  fill: lighten($theme-primary, 10%);
 
   transform:scale(1.5); 
   -webkit-transform:scale(1.5); 

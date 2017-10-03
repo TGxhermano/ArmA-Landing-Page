@@ -14,18 +14,18 @@ body {
 hr {
   max-width: 50px;
   border-width: 3px;
-  border-color: #2a5ea6; }
+  border-color: #021B44; }
 
 hr.light {
   border-color: white; }
 
 a {
-  color: #2a5ea6;
+  color: #021B44;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s; }
   a:focus, a:hover {
-    color: #2a5ea6; }
+    color: #021b44; }
 
 h1,
 h2,
@@ -41,7 +41,7 @@ p {
   margin-bottom: 20px; }
 
 .bg-primary {
-  background-color: #2a5ea6 !important; }
+  background-color: #021B44 !important; }
 
 .bg-dark {
   color: white;
@@ -58,10 +58,10 @@ p {
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
-  fill: #2a5ea6; }
+  fill: #021B44; }
 
 .svg-icon:hover .svg-logo {
-  fill: #20477d;
+  fill: #032f76;
   transform: scale(1.5);
   -webkit-transform: scale(1.5);
   -moz-transform: scale(1.5);
@@ -186,10 +186,10 @@ body {
   #mainNav .navbar-brand {
     font-weight: 700;
     text-transform: uppercase;
-    color: #2a5ea6;
+    color: #021B44;
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
     #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-      color: #2a5ea6; }
+      color: #021b44; }
   #mainNav .navbar-toggle {
     font-size: 12px;
     font-weight: 700;
@@ -203,10 +203,10 @@ body {
     color: #222222; }
     #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover,
     #mainNav .navbar-nav > li.nav-item > a.nav-link:hover {
-      color: #2a5ea6; }
+      color: #021B44; }
     #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active,
     #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-      color: #2a5ea6 !important;
+      color: white !important;
       background-color: transparent; }
       #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover,
       #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
@@ -219,10 +219,10 @@ body {
     color: #222222; }
     #mainNav .navbar-nav span.nav-item a.nav-link:focus:hover,
     #mainNav .navbar-nav span.nav-item a.nav-link:hover {
-      color: #2a5ea6; }
+      color: #021B44; }
     #mainNav .navbar-nav span.nav-item a.nav-link:focus.active,
     #mainNav .navbar-nav span.nav-item a.nav-link.active {
-      color: #2a5ea6 !important;
+      color: white !important;
       background-color: transparent; }
       #mainNav .navbar-nav span.nav-item a.nav-link:focus.active:hover,
       #mainNav .navbar-nav span.nav-item a.nav-link.active:hover {
@@ -248,25 +248,25 @@ body {
         #mainNav .navbar-nav > span.nav-item > a.nav-link:focus:hover {
           color: white; }
       #mainNav.navbar-shrink {
-        border-color: rgba(34, 34, 34, 0.05);
-        background-color: white; }
+        border-color: rgba(255, 255, 255, 0.3);
+        background-color: #191919; }
         #mainNav.navbar-shrink .navbar-brand {
           font-size: 16px;
-          color: #2a5ea6; }
+          color: rgba(255, 255, 255, 0.7); }
           #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
-            color: #2a5ea6; }
+            color: white; }
         #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
         #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
-          color: #222222; }
+          color: rgba(255, 255, 255, 0.7); }
           #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
           #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-            color: #2a5ea6; }
+            color: white; }
         #mainNav.navbar-shrink .navbar-nav > span.nav-item > a.nav-link,
         #mainNav.navbar-shrink .navbar-nav > span.nav-item > a.nav-link:focus {
-          color: #222222; }
+          color: rgba(255, 255, 255, 0.7); }
           #mainNav.navbar-shrink .navbar-nav > span.nav-item > a.nav-link:hover,
           #mainNav.navbar-shrink .navbar-nav > span.nav-item > a.nav-link:focus:hover {
-            color: #2a5ea6; } }
+            color: white; } }
 
 header.masthead {
   position: relative;
@@ -345,7 +345,7 @@ header.masthead {
     text-align: center;
     opacity: 0;
     color: white;
-    background: rgba(42, 94, 166, 0.9);
+    background: rgba(2, 27, 68, 0.9);
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     transition: all 0.2s; }
@@ -381,7 +381,7 @@ header.masthead {
     margin: 0 auto 20px; }
 
 .text-primary {
-  color: #2a5ea6 !important; }
+  color: #021B44 !important; }
 
 .no-gutter > [class*='col-'] {
   padding-right: 0;
@@ -426,28 +426,28 @@ header.masthead {
 
 .btn-primary {
   color: white;
-  border-color: #2a5ea6;
-  background-color: #2a5ea6; }
+  border-color: #021B44;
+  background-color: #021B44; }
   .btn-primary.focus, .btn-primary:focus {
     color: white;
-    border-color: #102440;
-    background-color: #20477d; }
+    border-color: black;
+    background-color: #010712; }
   .btn-primary:hover {
     color: white;
-    border-color: #1e4275;
-    background-color: #20477d; }
+    border-color: #000309;
+    background-color: #010712; }
   .btn-primary.active, .btn-primary:active,
   .open > .btn-primary.dropdown-toggle {
     color: white;
-    border-color: #1e4275;
-    background-color: #20477d; }
+    border-color: #000309;
+    background-color: #010712; }
     .btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover,
     .open > .btn-primary.dropdown-toggle.focus,
     .open > .btn-primary.dropdown-toggle:focus,
     .open > .btn-primary.dropdown-toggle:hover {
       color: white;
-      border-color: #102440;
-      background-color: #183761; }
+      border-color: black;
+      background-color: black; }
   .btn-primary.active, .btn-primary:active,
   .open > .btn-primary.dropdown-toggle {
     background-image: none; }
@@ -455,10 +455,10 @@ header.masthead {
   fieldset[disabled] .btn-primary.focus,
   fieldset[disabled] .btn-primary:focus,
   fieldset[disabled] .btn-primary:hover {
-    border-color: #2a5ea6;
-    background-color: #2a5ea6; }
+    border-color: #021B44;
+    background-color: #021B44; }
   .btn-primary .badge {
-    color: #2a5ea6;
+    color: #021B44;
     background-color: white; }
 
 .btn {
