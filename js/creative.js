@@ -41,16 +41,16 @@
       $(".navbar-left").removeClass("navbar-left-expand");
       $(".navbar-right").removeClass("navbar-right-expand");
     }
-    if($("#mainNav").offset().top > 300) {
-      $("#mainLogo").addClass("mainLogo-scaled");
-    }
-    else {
-      $("#mainLogo").removeClass("mainLogo-scaled");
-    }
-    if($("#mainNav").offset().top > 435) {
+
+    var distance = $("#header-content").offset().top - $(window).scrollTop();
+
+    if(distance <= 0) {
       $("#header-content").addClass("mainLogo-docked");
-    } else {
+      //$("#mainLogo").addClass("mainLogo-scaled");
+    }
+    if($(window).scrollTop() == 0) {
       $("#header-content").removeClass("mainLogo-docked");
+      //$("#mainLogo").removeClass("mainLogo-scaled");
     }
   });
 

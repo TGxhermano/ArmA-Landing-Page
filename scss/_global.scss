@@ -91,7 +91,7 @@ p {
 
 .mainLogo-docked {
   position: fixed !important;
-  top: 50px !important;
+  top: 0px !important;
 }
 
 .navbar-left {
@@ -190,6 +190,7 @@ body {
   -ms-transform:scale(1); 
   -o-transform:scale(1);
   pointer-events: all;
+  transform-origin: center top;
 }
 
 #header-content {
