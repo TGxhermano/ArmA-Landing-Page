@@ -91,7 +91,7 @@ p {
 
 .mainLogo-docked {
   position: fixed !important;
-  top: 0px !important;
+  //top: 0px !important;
 }
 
 .navbar-left {
@@ -184,6 +184,8 @@ body {
 #mainLogo {
   @include transition-all;
   position: relative;
+  height: 100%;
+  width: 100%;
   transform:scale(1); 
   -webkit-transform:scale(1); 
   -moz-transform:scale(1); 
@@ -195,4 +197,5 @@ body {
 
 #header-content {
   z-index: 10000;
+  position: relative;
 }

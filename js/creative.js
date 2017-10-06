@@ -28,7 +28,14 @@
 
   // Collapse the navbar when page is scrolled
   // Dock logo to navbar when page is scrolled
-  $(window).scroll(function() {
+
+  var lastScroll = 0;
+  var imgDocked = false;
+  $(window).scroll(function(event) {
+    var st = $(this).scrollTop();
+    var imageHeight = $("#mainLogo").height();
+    var top = imageHeight/2 - parseFloat("20%");
+
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-shrink");
     } else {
@@ -45,13 +52,18 @@
     var distance = $("#header-content").offset().top - $(window).scrollTop();
 
     if(distance <= 0) {
+      $("#header-content").css("top", top);
       $("#header-content").addClass("mainLogo-docked");
-      //$("#mainLogo").addClass("mainLogo-scaled");
+      imgDocked = true;
+        //$("#mainLogo").addClass("mainLogo-scaled");
     }
-    if($(window).scrollTop() == 0) {
+    if(imgDocked == true && st < lastScroll) {
+      //$("#header-content").css("top", "auto");
       $("#header-content").removeClass("mainLogo-docked");
+      imgDocked = false;
       //$("#mainLogo").removeClass("mainLogo-scaled");
     }
+    lastScroll = st;
   });
 
   // Workaround for making the main logo load if user refreshed the page and is scrolled down for more than 300 pixels

@@ -81,8 +81,7 @@ p {
   -o-transform: scale(0.25) !important; }
 
 .mainLogo-docked {
-  position: fixed !important;
-  top: 0px !important; }
+  position: fixed !important; }
 
 .navbar-left {
   -webkit-transition: all 0.2s;
@@ -166,6 +165,8 @@ body {
   -moz-transition: all 0.2s;
   transition: all 0.2s;
   position: relative;
+  height: 100%;
+  width: 100%;
   transform: scale(1);
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -175,7 +176,8 @@ body {
   transform-origin: center top; }
 
 #header-content {
-  z-index: 10000; }
+  z-index: 10000;
+  position: relative; }
 
 #mainNav {
   border-color: rgba(34, 34, 34, 0.05);
