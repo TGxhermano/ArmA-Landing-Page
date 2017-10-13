@@ -78,8 +78,7 @@ p {
   -webkit-transform: scale(0.25) !important;
   -moz-transform: scale(0.25) !important;
   -ms-transform: scale(0.25) !important;
-  -o-transform: scale(0.25) !important;
-  top: 20px !important; }
+  -o-transform: scale(0.25) !important; }
 
 .mainLogo-docked {
   position: fixed !important; }
@@ -178,7 +177,8 @@ body {
 
 #header-content {
   z-index: 10000;
-  position: relative; }
+  position: relative;
+  top: 0 !important; }
 
 #mainNav {
   border-color: rgba(34, 34, 34, 0.05);

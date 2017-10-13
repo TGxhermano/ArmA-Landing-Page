@@ -31,7 +31,9 @@
 
   var lastScroll = 0;
   var imgDocked = false;
-  var navbarHeight = $("#mainNav").height();
+  var headerHeight = $("#header-content").height();
+  var top = headerHeight / 2;
+  console.log(top);
   $(window).scroll(function(event) {
     var st = $(this).scrollTop();
     var imageHeight = $("#mainLogo").height();
@@ -52,16 +54,16 @@
       $(".navbar-right").addClass("navbar-right-expand");
       $("#header-content").css("top", top);
       $("#header-content").addClass("mainLogo-docked");
-      imgDocked = true;
       $("#mainLogo").addClass("mainLogo-scaled");
+      imgDocked = true;
     }
     if(imgDocked == true && st < lastScroll && mastheadDistance <= top) { //undock once .masthead has value of var top
       $(".navbar-left").removeClass("navbar-left-expand"); //expand navigation again
       $(".navbar-right").removeClass("navbar-right-expand");
       $("#header-content").removeAttr("style");
       $("#header-content").removeClass("mainLogo-docked");
-      imgDocked = false;
       $("#mainLogo").removeClass("mainLogo-scaled");
+      imgDocked = false;
     }
     lastScroll = st;
   });
