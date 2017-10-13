@@ -49,27 +49,27 @@
       $(".navbar-right").removeClass("navbar-right-expand");
     }
 
-    var distance = $("#header-content").offset().top - $(window).scrollTop();
-    var mastheadDistance = $(".masthead").offset().top - $(window).scrollTop();
-    mastheadDistance = Math.abs(mastheadDistance);
-    var mastheadHeight = $("#header-content").height();
+    var distance = $("#header-content").offset().top - $(window).scrollTop(); //get header distance from top
+    var mastheadDistance = $(".masthead").offset().top - $(window).scrollTop(); //get masthead current offset from top
+    mastheadDistance = Math.abs(mastheadDistance); //make the negative value a positive
+    var mastheadHeight = $("#header-content").height(); //just to check the actual .masthead height
 
-    console.log("mastheadOffset: " + mastheadDistance);
+    console.log("mastheadOffset: " + mastheadDistance); //some console logging for control
     console.log("mastheadHeight: " + mastheadHeight);
     console.log("top: " + top);
 
-    if(distance <= 0) {
+    if(distance <= 0) { 
       $("#header-content").css("top", top);
       $("#header-content").addClass("mainLogo-docked");
       imgDocked = true;
-        //$("#mainLogo").addClass("mainLogo-scaled");
+      $("#mainLogo").addClass("mainLogo-scaled");
     }
-    if(imgDocked == true && st < lastScroll && mastheadDistance <= top) {
+    if(imgDocked == true && st < lastScroll && mastheadDistance <= top) { //undock once .masthead has value of var top
       //$("#header-content").css("top", "auto");
       $("#header-content").removeAttr("style");
       $("#header-content").removeClass("mainLogo-docked");
       imgDocked = false;
-      //$("#mainLogo").removeClass("mainLogo-scaled");
+      $("#mainLogo").removeClass("mainLogo-scaled");
     }
     lastScroll = st;
   });

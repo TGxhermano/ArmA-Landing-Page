@@ -87,11 +87,11 @@ p {
   -moz-transform:scale(0.25) !important; 
   -ms-transform:scale(0.25) !important; 
   -o-transform:scale(0.25) !important;
+  top: 20px !important;
 }
 
 .mainLogo-docked {
   position: fixed !important;
-  //top: 0px !important;
 }
 
 .navbar-left {
