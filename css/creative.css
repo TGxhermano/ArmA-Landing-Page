@@ -58,10 +58,10 @@ p {
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
-  fill: #021B44; }
+  fill: #b3b3b3; }
 
 .svg-icon:hover .svg-logo {
-  fill: #032f76;
+  fill: white;
   transform: scale(1.5);
   -webkit-transform: scale(1.5);
   -moz-transform: scale(1.5);

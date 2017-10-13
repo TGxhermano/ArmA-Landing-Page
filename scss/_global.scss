@@ -63,10 +63,10 @@ p {
 
 .svg-logo {
   @include transition-all;
-  fill: $theme-primary;
+  fill: $gray-slightly-lighter;
 }
 .svg-icon:hover .svg-logo {
-  fill: lighten($theme-primary, 10%);
+  fill: lighten($gray-lighter, 10%);
 
   transform:scale(1.5); 
   -webkit-transform:scale(1.5); 
