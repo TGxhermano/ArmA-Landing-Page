@@ -31,6 +31,7 @@
 
   var lastScroll = 0;
   var imgDocked = false;
+  var navbarHeight = $("#mainNav").height();
   $(window).scroll(function(event) {
     var st = $(this).scrollTop();
     var imageHeight = $("#mainLogo").height();
@@ -41,31 +42,22 @@
     } else {
       $("#mainNav").removeClass("navbar-shrink");
     }
-    if($("#mainNav").offset().top > 150) {
-      $(".navbar-left").addClass("navbar-left-expand");
-      $(".navbar-right").addClass("navbar-right-expand");
-    } else {
-      $(".navbar-left").removeClass("navbar-left-expand");
-      $(".navbar-right").removeClass("navbar-right-expand");
-    }
 
     var distance = $("#header-content").offset().top - $(window).scrollTop(); //get header distance from top
     var mastheadDistance = $(".masthead").offset().top - $(window).scrollTop(); //get masthead current offset from top
     mastheadDistance = Math.abs(mastheadDistance); //make the negative value a positive
-    var mastheadHeight = $("#header-content").height(); //just to check the actual .masthead height
-
-    console.log("mastheadOffset: " + mastheadDistance); //some console logging for control
-    console.log("mastheadHeight: " + mastheadHeight);
-    console.log("top: " + top);
 
     if(distance <= 0) { 
+      $(".navbar-left").addClass("navbar-left-expand"); //move navigation items aside
+      $(".navbar-right").addClass("navbar-right-expand");
       $("#header-content").css("top", top);
       $("#header-content").addClass("mainLogo-docked");
       imgDocked = true;
       $("#mainLogo").addClass("mainLogo-scaled");
     }
     if(imgDocked == true && st < lastScroll && mastheadDistance <= top) { //undock once .masthead has value of var top
-      //$("#header-content").css("top", "auto");
+      $(".navbar-left").removeClass("navbar-left-expand"); //expand navigation again
+      $(".navbar-right").removeClass("navbar-right-expand");
       $("#header-content").removeAttr("style");
       $("#header-content").removeClass("mainLogo-docked");
       imgDocked = false;
