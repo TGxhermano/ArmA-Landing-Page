@@ -30,7 +30,6 @@
   // Dock logo to navbar when page is scrolled
 
   var lastScroll = 0;
-  var imgDocked = false;
 
   var headerHeight = $(".masterhead").height();
   var top = headerHeight / 2;
@@ -39,7 +38,8 @@
   console.log(top);
   $(window).scroll(function(event) {
     var st = $(this).scrollTop();
-    var imageHeight = $("#mainLogo").height();
+    var imageHeight = $("#header-content").height();
+    var halfImage = imageHeight/2 + $("#mainNav").height()/2;
 
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-shrink");
@@ -54,17 +54,16 @@
     if(distance <= 0) { 
       $(".navbar-left").addClass("navbar-left-expand"); //move navigation items aside
       $(".navbar-right").addClass("navbar-right-expand");
+      $("#header-content").css("top", halfImage);
       $("#header-content").addClass("mainLogo-docked");
       $("#mainLogo").addClass("mainLogo-scaled");
-      imgDocked = true;
     }
-    if(imgDocked == true && st < lastScroll && mastheadDistance <= top) { //undock once .masthead has value of var top
+    if(st < lastScroll && mastheadDistance <= halfImage) { //undock once .masthead has value of var top
       $(".navbar-left").removeClass("navbar-left-expand"); //expand navigation again
       $(".navbar-right").removeClass("navbar-right-expand");
-      //$("#header-content").removeAttr("style");
+      $("#header-content").css("top", top);
       $("#header-content").removeClass("mainLogo-docked");
       $("#mainLogo").removeClass("mainLogo-scaled");
-      imgDocked = false;
     }
     lastScroll = st;
   });
