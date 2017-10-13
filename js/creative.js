@@ -61,7 +61,7 @@
     if(st < lastScroll && mastheadDistance <= halfImage) { //undock once .masthead has value of var top
       $(".navbar-left").removeClass("navbar-left-expand"); //expand navigation again
       $(".navbar-right").removeClass("navbar-right-expand");
-      $("#header-content").css("top", top);
+      $("#header-content").removeAttr("style");
       $("#header-content").removeClass("mainLogo-docked");
       $("#mainLogo").removeClass("mainLogo-scaled");
     }
