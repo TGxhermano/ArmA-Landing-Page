@@ -177,8 +177,7 @@ body {
 
 #header-content {
   z-index: 10000;
-  position: relative;
-  top: 0 !important; }
+  position: relative; }
 
 .list-text {
   color: #f0f0f0; }
