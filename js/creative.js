@@ -31,11 +31,6 @@
 
   var lastScroll = 0;
 
-  var headerHeight = $(".masterhead").height();
-  var top = headerHeight / 2;
-  $("#header-content").css("top", top);
-
-  console.log(top);
   $(window).scroll(function(event) {
     var st = $(this).scrollTop();
     var imageHeight = $("#header-content").height();
