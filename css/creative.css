@@ -45,7 +45,7 @@ p {
 
 .bg-dark {
   color: white;
-  background-color: #222222 !important; }
+  background-color: #242424 !important; }
 
 .text-faded {
   color: rgba(255, 255, 255, 0.7); }
@@ -125,12 +125,12 @@ section {
 
 ::-moz-selection {
   color: white;
-  background: #222222;
+  background: #242424;
   text-shadow: none; }
 
 ::selection {
   color: white;
-  background: #222222;
+  background: #242424;
   text-shadow: none; }
 
 img::selection {
@@ -142,7 +142,7 @@ img::-moz-selection {
   background: transparent; }
 
 body {
-  -webkit-tap-highlight-color: #222222; }
+  -webkit-tap-highlight-color: #242424; }
 
 #background-video {
   position: fixed;
@@ -181,10 +181,10 @@ body {
   top: 0 !important; }
 
 .list-text {
-  color: #eeeeee; }
+  color: #f0f0f0; }
 
 #mainNav {
-  border-color: rgba(34, 34, 34, 0.05);
+  border-color: rgba(36, 36, 36, 0.05);
   background-color: white;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.2s;
@@ -201,13 +201,13 @@ body {
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #222222; }
+    color: #242424; }
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus,
   #mainNav .navbar-nav > li.nav-item > a.nav-link {
     font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #222222; }
+    color: #242424; }
     #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover,
     #mainNav .navbar-nav > li.nav-item > a.nav-link:hover {
       color: #021B44; }
@@ -223,7 +223,7 @@ body {
     font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #222222; }
+    color: #242424; }
     #mainNav .navbar-nav span.nav-item a.nav-link:focus:hover,
     #mainNav .navbar-nav span.nav-item a.nav-link:hover {
       color: #021B44; }
@@ -395,27 +395,27 @@ header.masthead {
   padding-left: 0; }
 
 .btn-default {
-  color: #222222;
+  color: #242424;
   border-color: white;
   background-color: white; }
   .btn-default.focus, .btn-default:focus {
-    color: #222222;
+    color: #242424;
     border-color: #bfbfbf;
     background-color: #e6e6e6; }
   .btn-default:hover {
-    color: #222222;
+    color: #242424;
     border-color: #e0e0e0;
     background-color: #e6e6e6; }
   .btn-default.active, .btn-default:active,
   .open > .btn-default.dropdown-toggle {
-    color: #222222;
+    color: #242424;
     border-color: #e0e0e0;
     background-color: #e6e6e6; }
     .btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover,
     .open > .btn-default.dropdown-toggle.focus,
     .open > .btn-default.dropdown-toggle:focus,
     .open > .btn-default.dropdown-toggle:hover {
-      color: #222222;
+      color: #242424;
       border-color: #bfbfbf;
       background-color: #d4d4d4; }
   .btn-default.active, .btn-default:active,
@@ -429,7 +429,7 @@ header.masthead {
     background-color: white; }
   .btn-default .badge {
     color: white;
-    background-color: #222222; }
+    background-color: #242424; }
 
 .btn-primary {
   color: white;
