@@ -41,7 +41,7 @@
     } else {
       $("#mainNav").removeClass("navbar-shrink");
     }
-    if($("#mainNav").offset().top > 200) {
+    if($("#mainNav").offset().top > 150) {
       $(".navbar-left").addClass("navbar-left-expand");
       $(".navbar-right").addClass("navbar-right-expand");
     } else {
@@ -50,6 +50,13 @@
     }
 
     var distance = $("#header-content").offset().top - $(window).scrollTop();
+    var mastheadDistance = $(".masthead").offset().top - $(window).scrollTop();
+    mastheadDistance = Math.abs(mastheadDistance);
+    var mastheadHeight = $("#header-content").height();
+
+    console.log("mastheadOffset: " + mastheadDistance);
+    console.log("mastheadHeight: " + mastheadHeight);
+    console.log("top: " + top);
 
     if(distance <= 0) {
       $("#header-content").css("top", top);
@@ -57,8 +64,9 @@
       imgDocked = true;
         //$("#mainLogo").addClass("mainLogo-scaled");
     }
-    if(imgDocked == true && st < lastScroll) {
+    if(imgDocked == true && st < lastScroll && mastheadDistance <= top) {
       //$("#header-content").css("top", "auto");
+      $("#header-content").removeAttr("style");
       $("#header-content").removeClass("mainLogo-docked");
       imgDocked = false;
       //$("#mainLogo").removeClass("mainLogo-scaled");
