@@ -38,7 +38,7 @@
   $(window).scroll(function(event) { //scroll event handler
     var scrollTop = $(this).scrollTop(); //get distance scrolled from window top
     var imageHeight = $("#header-content").height(); //get main logo image file height
-    var halfImage = imageHeight/2 + $("#mainNav").height()*0.3; //calc the place, seen from window top, where the top main logo is suppose to be placed
+    var halfImage = imageHeight/2 + $("#mainNav").height()*0.05; //calc the place, seen from window top, where the top main logo is suppose to be placed
 
     //shrink/unshrink navbar
     if ($("#mainNav").offset().top > 100) {
