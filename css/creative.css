@@ -167,11 +167,11 @@ body {
   position: relative;
   height: 100%;
   width: 100%;
-  transform: scale(1);
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
+  /*transform:scale(1); 
+  -webkit-transform:scale(1); 
+  -moz-transform:scale(1); 
+  -ms-transform:scale(1); 
+  -o-transform:scale(1);*/
   pointer-events: all;
   transform-origin: center top; }
 
