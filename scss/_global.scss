@@ -206,21 +206,6 @@ body {
   color: $gray-lighter;
 }
 
-.videoIframeWrapper_16-9 {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-}
-
-.videoIframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-
-}
-
 .videoIframeCaption_16-9 {
   position: absolute;
   background-color: $seal-blue-50alpha;
