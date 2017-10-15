@@ -106,18 +106,18 @@ p {
   -o-transform: translateX(0px); }
 
 .navbar-left-expand {
-  transform: translateX(-100px);
-  -webkit-transform: translateX(-100px);
-  -moz-transform: translateX(-100px);
-  -ms-transform: translateX(-100px);
-  -o-transform: translateX(-100px); }
+  transform: translateX(-145px);
+  -webkit-transform: translateX(-145px);
+  -moz-transform: translateX(-145px);
+  -ms-transform: translateX(-145px);
+  -o-transform: translateX(-145px); }
 
 .navbar-right-expand {
-  transform: translateX(125px);
-  -webkit-transform: translateX(125px);
-  -moz-transform: translateX(125px);
-  -ms-transform: translateX(125px);
-  -o-transform: translateX(125px); }
+  transform: translateX(100px);
+  -webkit-transform: translateX(100px);
+  -moz-transform: translateX(100px);
+  -ms-transform: translateX(100px);
+  -o-transform: translateX(100px); }
 
 section {
   padding: 30px 0; }
