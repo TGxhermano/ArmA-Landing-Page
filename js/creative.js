@@ -2,9 +2,9 @@
   "use strict"; // Start of use strict
 
   // refreshed/onload -> page scroll to top
-  window.onbeforeunload = function () {
+  /*window.onbeforeunload = function () {
     window.scrollTo(0, 0);
-  }
+  }*/
 
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
