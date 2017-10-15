@@ -192,11 +192,8 @@ body {
   left: 0;
   z-index: 10; }
 
-.test222 {
-  background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.68) 26%, rgba(0, 0, 0, 0.8) 48%, rgba(0, 0, 0, 0.98) 86%, rgba(0, 0, 0, 0.98) 100%);
-  background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.68) 26%, rgba(0, 0, 0, 0.8) 48%, rgba(0, 0, 0, 0.98) 86%, rgba(0, 0, 0, 0.98) 100%);
-  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.68) 26%, rgba(0, 0, 0, 0.8) 48%, rgba(0, 0, 0, 0.98) 86%, rgba(0, 0, 0, 0.98) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#fa000000',GradientType=0 ); }
+.panel-color {
+  background-color: #191919; }
 
 #mainNav {
   border-color: rgba(36, 36, 36, 0.05);
