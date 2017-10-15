@@ -184,14 +184,6 @@ body {
 .list-text {
   color: #f0f0f0; }
 
-.videoIframeCaption_16-9 {
-  position: absolute;
-  background-color: rgba(24, 79, 154, 0.5);
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 10; }
-
 .panel-color {
   background-color: #191919;
   color: rgba(255, 255, 255, 0.7); }
