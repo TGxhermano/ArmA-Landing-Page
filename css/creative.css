@@ -193,7 +193,8 @@ body {
   z-index: 10; }
 
 .panel-color {
-  background-color: #191919; }
+  background-color: #191919;
+  color: rgba(255, 255, 255, 0.7); }
 
 #mainNav {
   border-color: rgba(36, 36, 36, 0.05);
