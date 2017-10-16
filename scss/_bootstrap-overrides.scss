@@ -27,3 +27,8 @@
 .btn-xl {
   padding: 15px 30px;
 }
+
+//override popup section width to stop open the horizontal scroll bar which cased a jump in on the background image when popup opend
+.panel-body {
+  width: 100% !important;
+}
