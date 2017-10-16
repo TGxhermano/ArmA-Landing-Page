@@ -10,7 +10,7 @@ This project has the purpose to create and maintain a recruitment landing page f
 
 
 
-
+<pre>
   MMMMMMMMMMMMMMMMMMMMMM                
   MM                  MM                
  MMZ                  MM                
@@ -39,10 +39,4 @@ MMMMMMMMMMMMMM        NMM        MM
            .MM.                 MM      
              MMM       ..MM     MM.     
               MMMMMMMMMMMMMMMMMMMM   
-
-
-
-
-
-
-
+</pre>
