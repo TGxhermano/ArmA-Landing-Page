@@ -33,45 +33,50 @@
   
   /* MAIN LOGO ANIMATION & NAVBAR SHRINK/ITEM MOVEMENT*/
 
-  var lastScroll = 0;
+  // Docks button only if viewport is 991px or bigger (Bootstrap md media query)
 
-  $(window).scroll(function(event) { //scroll event handler
-    var scrollTop = $(this).scrollTop(); //get distance scrolled from window top
-    var imageHeight = $("#header-content").height(); //get main logo image file height
-    var halfImage = imageHeight/2 + $("#mainNav").height()*0.05; //calc the place, seen from window top, where the top main logo is suppose to be placed
+  if ($(window).width() >= 992) {
 
-    //shrink/unshrink navbar
-    if ($("#mainNav").offset().top > 100) {
-      $("#mainNav").addClass("navbar-shrink");
-    } else {
-      $("#mainNav").removeClass("navbar-shrink");
-    }
+    var lastScroll = 0;
 
-    var distance = $("#header-content").offset().top - $(window).scrollTop(); //get header distance from top
-    var mastheadDistance = $(".masthead").offset().top - $(window).scrollTop(); //get .masthead current offset from top
-    mastheadDistance = Math.abs(mastheadDistance); //make the negative value a positive
+    $(window).scroll(function(event) { //scroll event handler
+      var scrollTop = $(this).scrollTop(); //get distance scrolled from window top
+      var imageHeight = $("#header-content").height(); //get main logo image file height
+      var halfImage = imageHeight/2 + $("#mainNav").height()*0.05; //calc the place, seen from window top, where the top main logo is suppose to be placed
 
-    if(distance <= 0) { 
-      $(".navbar-left").addClass("navbar-left-expand"); //move navigation items aside
-      $(".navbar-right").addClass("navbar-right-expand"); //^
-      $("#header-content").css("top", halfImage); //set inline style attribute for main logo position
-      $("#header-content").addClass("mainLogo-docked"); //css dock main logo
-      $("#mainLogo").addClass("mainLogo-scaled"); //css shrink main logo
-    }
-    if(scrollTop < lastScroll && mastheadDistance <= halfImage) { //undock/unshrink
-      $(".navbar-left").removeClass("navbar-left-expand"); //expand navigation again
-      $(".navbar-right").removeClass("navbar-right-expand"); //^
-      $("#header-content").removeAttr("style"); //remove inline style attribute for main logo placement
-      $("#header-content").removeClass("mainLogo-docked"); //remove logo docking
-      $("#mainLogo").removeClass("mainLogo-scaled"); //remove logo shrinking
-    }
-    lastScroll = scrollTop;
-  });
+      //shrink/unshrink navbar
+      if ($("#mainNav").offset().top > 100) {
+        $("#mainNav").addClass("navbar-shrink");
+      } else {
+        $("#mainNav").removeClass("navbar-shrink");
+      }
+
+      var distance = $("#header-content").offset().top - $(window).scrollTop(); //get header distance from top
+      var mastheadDistance = $(".masthead").offset().top - $(window).scrollTop(); //get .masthead current offset from top
+      mastheadDistance = Math.abs(mastheadDistance); //make the negative value a positive
+
+      if(distance <= 0) { 
+        $(".navbar-left").addClass("navbar-left-expand"); //move navigation items aside
+        $(".navbar-right").addClass("navbar-right-expand"); //^
+        $("#header-content").css("top", halfImage); //set inline style attribute for main logo position
+        $("#header-content").addClass("mainLogo-docked"); //css dock main logo
+        $("#mainLogo").addClass("mainLogo-scaled"); //css shrink main logo
+      }
+      if(scrollTop < lastScroll && mastheadDistance <= halfImage) { //undock/unshrink
+        $(".navbar-left").removeClass("navbar-left-expand"); //expand navigation again
+        $(".navbar-right").removeClass("navbar-right-expand"); //^
+        $("#header-content").removeAttr("style"); //remove inline style attribute for main logo placement
+        $("#header-content").removeClass("mainLogo-docked"); //remove logo docking
+        $("#mainLogo").removeClass("mainLogo-scaled"); //remove logo shrinking
+      }
+      lastScroll = scrollTop;
+    });
+  };
 
   /* SCROLL-TO-TOP BUTTON */
 
-  // triggers button only if viewport bigger than 575px
-  if ($(window).width() >= 575) {
+  // triggers button only if viewport bigger than 991px or bigger (Bootstrap md media query)
+  if ($(window).width() >= 992) {
   window.onscroll = function() {checkScrollToTopCurrentScroll()}; // triggers scroll distance to top check function
   }
 
