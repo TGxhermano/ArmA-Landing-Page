@@ -10,7 +10,7 @@ html {
 
 body {
   @include serif-font;
-  background-color: black;
+  background-color: $background-color;
 }
 
 hr {
@@ -136,7 +136,7 @@ body {
   -webkit-tap-highlight-color: $gray-darker;
 }
 
-// styles for the background video in index.html
+// styles for the background video
 #background-video {
   position: fixed;
   top: 50%;
@@ -178,7 +178,7 @@ body {
   bottom: 1.5em;
   left: 1.5em; 
   z-index: 20;
-  fill: $gray-darker;
+  fill: $gray-slightly-lighter;
   opacity: 0.80;
   cursor: pointer;
   filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
@@ -189,7 +189,7 @@ body {
 }
 
 #scrollToTopButton:hover {
-  fill: $gray-light;
+  fill: $gray-lighter;
   opacity: 1;
   transform:scale(1.1); 
   -webkit-transform:scale(1.1); 
