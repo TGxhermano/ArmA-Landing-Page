@@ -189,10 +189,6 @@ body {
   color: rgba(255, 255, 255, 0.7);
   padding: 1em; }
 
-.panelTextAlignRight {
-  padding-left: 25%;
-  text-align: right; }
-
 #mainNav {
   border-color: rgba(36, 36, 36, 0.05);
   background-color: white;
