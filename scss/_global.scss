@@ -10,6 +10,7 @@ html {
 
 body {
   @include serif-font;
+  background-color: $background-color;
 }
 
 hr {
@@ -141,7 +142,7 @@ body {
   -webkit-tap-highlight-color: $gray-darker;
 }
 
-// styles for the background video in index.html
+// styles for the background video
 #background-video {
   position: fixed;
   top: 50%;
@@ -183,7 +184,7 @@ body {
   bottom: 1.5em;
   left: 1.5em; 
   z-index: 20;
-  fill: $gray-darker;
+  fill: $gray-slightly-lighter;
   opacity: 0.80;
   cursor: pointer;
   filter: url(#drop-shadow-black);
@@ -193,7 +194,7 @@ body {
 }
 
 #scrollToTopButton:hover {
-  fill: $gray-light;
+  fill: $gray-lighter;
   opacity: 1;
   transform:scale(1.1); 
   -webkit-transform:scale(1.1); 
