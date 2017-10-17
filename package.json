@@ -29,6 +29,7 @@
     "bootstrap": "^4.0.0-beta",
     "jquery": "^3.2.1",
     "jquery.easing": "^1.4.1",
+    "popper.js": "^1.12.5",
     "scrollreveal": "3.3.6"
   },
   "devDependencies": {
