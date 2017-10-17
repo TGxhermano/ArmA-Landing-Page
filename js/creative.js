@@ -84,19 +84,49 @@
       }
   }
 
-  
+  /* TWITCH ONLINE CHECK */
+
+  //Twitch channel names go here
+  //Must be string
+  //ID of index.html element must be the same as twitch name
+
+    var streamArray = ["tgxhermano", "geelsmark", "adirtynurse"];
+    
+    streamArray.forEach(function(user) {
+      console.log("Log: " + user + " function start.");
+      var userString = "".concat(".",user);
+      $.getJSON('https://wind-bow.gomix.me/twitch-api/streams/' + user + '?callback=?')
+        .then(function(data){
+          console.log("Log: " + user + " Data gathered");
+          console.log(data);
+          if(data.stream == null) {
+            console.log("Log: " + user + " Data, stream value");
+            console.log(data.stream);
+            $(userString).addClass("twitch-online");
+            console.log("Log: " + user + " Adding class twitch-online to id: " +userString);
+          };
+        });
+    });
+
+
   // Workaround for making the main logo load if user refreshed the page and is scrolled down for more than 300 pixels
   if($("#mainNav").offset().top > 300) {
     $(window).onload(function(){
+      
   })};
 
   // Scroll reveal calls
   window.sr = ScrollReveal();
-  sr.reveal('.sr-icons', {
+  sr.reveal('.sr-icons-community', {
     duration: 600,
     scale: 0.3,
     distance: '0px'
-  }, 200);
+  }, 100);
+  sr.reveal('.sr-icons-media', {
+    duration: 600,
+    scale: 0.3,
+    distance: '0px'
+  }, 100);
   sr.reveal('.sr-button', {
     duration: 1000,
     delay: 200

@@ -102,7 +102,7 @@
     </section>
     <!--SVG Drop Shadow Filter (for community icons)-->
     <svg height="0" xmlns="http://www.w3.org/2000/svg">
-      <filter id="drop-shadow">
+      <filter id="drop-shadow-black">
       <feGaussianBlur in="SourceAlpha" stdDeviation="2.2"/>
       <feOffset dx="12" dy="12" result="offsetblur"/>
       <feFlood flood-color="rgba(0,0,0,0.5)"/>
@@ -113,13 +113,27 @@
       </feMerge>
     </filter>
     </svg>
+
+    <svg height="0" xmlns="http://www.w3.org/2000/svg">
+      <filter id="drop-shadow-green">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2.2"/>
+      <feOffset dx="0" dy="0" result="offsetblur"/>
+      <feFlood flood-color="#00D10E"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge>
+      <feMergeNode/>
+      <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    </svg>
+
     <!-- COMMUNITY SECTION -->
     <section id="community" class="pt-0">
       <div class="container">
         <div class="row">
           <!--Discord Button (as inline svg)-->
           <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 p-3">
-            <div id="communityButton1" class="svg-icon m-auto sr-icons" role="tab">
+            <div id="communityButton1" class="svg-icon m-auto sr-icons-community" role="tab">
               <a data-toggle="collapse" data-parent="#accordionCommunity" href="#collapse1" aria-expanded="false" aria-controls="collapse1">                 
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                   viewBox="0 0 2184 2500" xml:space="preserve" class="svg-logo">
@@ -145,7 +159,7 @@
           </div>
           <!--Steam Button (as inline svg)-->
           <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 p-3">
-            <div id="communityButton2" class="svg-icon m-auto sr-icons" role="tab">
+            <div id="communityButton2" class="svg-icon m-auto sr-icons-community" role="tab">
               <a data-toggle="collapse" data-parent="#accordionCommunity" href="#collapse2" aria-expanded="false" aria-controls="collapse2">     
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
                   viewBox="-213.5 -352 1716 1652" xml:space="preserve" class="svg-logo">
@@ -189,7 +203,7 @@
           </div>
           <!--Teamspeak Button (as inline svg)-->
           <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 p-3">
-            <div id="communityButton3" class="svg-icon m-auto sr-icons" role="tab">
+            <div id="communityButton3" class="svg-icon m-auto sr-icons-community" role="tab">
               <a data-toggle="collapse" data-parent="#accordionCommunity" href="#collapse3" aria-expanded="false" aria-controls="collapse3"> 
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                   viewBox="0 0 2500 2449" xml:space="preserve" class="svg-logo">
@@ -271,7 +285,7 @@
           </div>
           <!--TG Button (as inline svg)-->
           <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 p-3">
-            <div id="communityButton4" class="svg-icon m-auto sr-icons" role="tab">
+            <div id="communityButton4" class="svg-icon m-auto sr-icons-community" role="tab">
               <a data-toggle="collapse" data-parent="#accordionCommunity" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 331 372" xml:space="preserve" class="svg-logo">
                   <g>
@@ -432,7 +446,7 @@
         <div class="row">
           <!--youtube Button (as inline svg)-->
           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 p-3">
-            <div id="channelsButton1" class="svg-icon m-auto sr-icons" role="tab">
+            <div id="channelsButton1" class="svg-icon m-auto sr-icons-media" role="tab">
               <a data-toggle="collapse" data-parent="#accordionChannels" href="#collapseaccordionChannels1" aria-expanded="false" aria-controls="collapse2-1">                 
                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                   viewBox="267.629 492.5 1511.924 1064" xml:space="preserve" class="svg-logo">
@@ -458,7 +472,7 @@
           </div>
           <!--Twitch Button (as inline svg)-->
           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 p-3">
-            <div id="channelsButton2" class="svg-icon m-auto sr-icons" role="tab">
+            <div id="channelsButton2" class="svg-icon m-auto sr-icons-media" role="tab">
               <a data-toggle="collapse" data-parent="#accordionChannels" href="#collapseaccordionChannels2" aria-expanded="false" aria-controls="collapse2-2">     
                 <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                   viewBox="100 0 1592 1664" xml:space="preserve" class="svg-logo">
@@ -500,18 +514,18 @@
                   </div>
                   <div class="row p-2">
                     <div class="col-lg-2 p-0">
-                      <a href="https://www.youtube.com/user/Geelsmark" target="_blank"><img src="img/bmp/channels_avatar-geelsmark.jpg" class="img-fluid channelsAvatarImg" alt="Geelsmark"></a>
-                    </div>
-                    <div class="col-lg-5 align-self-center">
-                      <h5>Geelsmark</h5>
-                    </div>
-                  </div>
-                  <div class="row p-2">
-                    <div class="col-lg-2 p-0">
                       <a href="https://www.youtube.com/channel/UCUsZiVVKNLjTWc8u1pES8FA" target="_blank"><img src="img/bmp/channels_avatar-dirty.jpg" class="img-fluid channelsAvatarImg" alt="Dirty"></a>
                     </div>
                     <div class="col-lg-5 align-self-center">
                       <h5>Dirty</h5>
+                    </div>
+                  </div>
+                  <div class="row p-2">
+                    <div class="col-lg-2 p-0">
+                      <a href="https://www.youtube.com/user/Geelsmark" target="_blank"><img src="img/bmp/channels_avatar-geelsmark.jpg" class="img-fluid channelsAvatarImg" alt="Geelsmark"></a>
+                    </div>
+                    <div class="col-lg-5 align-self-center">
+                      <h5>Geelsmark</h5>
                     </div>
                   </div>
                 </div>
@@ -519,7 +533,7 @@
             </div>
         </div>
         <!--twitch card-->
-        <div class="card border-0">
+        <div id="twitch-card" class="card border-0">
           <div id="collapseaccordionChannels2" class="collapse panel-color p-3" role="tabpanel" aria-labelledby="channelsButton2">
             <div class="card-block row pb-3 pt-1" style="background-image: linear-gradient(rgba(25,25,25,0.8),rgba(25,25,25,0.8)), url(img/svg/twitch_logo_bw.svg); background-repeat: no-repeat; background-position: center top;">
               <div class="col-lg-6 text-xs-center text-sm-center text-md-center text-lg-right text-xl-right">
@@ -535,26 +549,26 @@
               <div class="col-lg-6 text-xs-center text-sm-center text-md-center text-lg-left text-xl-left">
                 <div class="row p-2">
                   <div class="col-lg-2 p-0">
-                    <a href="https://go.twitch.tv/tgxhermano" target="_blank"><img src="img/bmp/channels_avatar-hermano.jpg" class="img-fluid channelsAvatarImg" alt="hermano"></a>
+                    <a id="adirtynurse" href="https://go.twitch.tv/adirtynurse" target="_blank"><img src="img/bmp/channels_avatar-dirty.jpg" class="img-fluid channelsAvatarImg" alt="Dirty"></a>
                   </div>
                   <div class="col-lg-5 align-self-center">
-                    <h5>hermano</h5>
+                    <h5>Dirty</h5>
                   </div>
                 </div>
                 <div class="row p-2">
                   <div class="col-lg-2 p-0">
-                    <a href="https://go.twitch.tv/geelsmark" target="_blank"><img src="img/bmp/channels_avatar-geelsmark.jpg" class="img-fluid channelsAvatarImg" alt="Geelsmark"></a>
+                    <a id="geelsmark" href="https://go.twitch.tv/geelsmark" target="_blank"><img src="img/bmp/channels_avatar-geelsmark.jpg" class="img-fluid channelsAvatarImg" alt="Geelsmark"></a>
                   </div>
                   <div class="col-lg-5 align-self-center">
                     <h5>Geelsmark</h5>
                   </div>
-                </div>
+                </div>    
                 <div class="row p-2">
                   <div class="col-lg-2 p-0">
-                    <a href="https://go.twitch.tv/adirtynurse" target="_blank"><img src="img/bmp/channels_avatar-dirty.jpg" class="img-fluid channelsAvatarImg" alt="Dirty"></a>
+                    <a id="tgxhermano" href="https://go.twitch.tv/tgxhermano" target="_blank"><img src="img/bmp/channels_avatar-hermano.jpg" class="img-fluid channelsAvatarImg" alt="hermano"></a>
                   </div>
                   <div class="col-lg-5 align-self-center">
-                    <h5>Dirty</h5>
+                    <h5>hermano</h5>
                   </div>
                 </div>
               </div>
