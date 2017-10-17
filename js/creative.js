@@ -93,17 +93,13 @@
     var streamArray = ["tgxhermano", "geelsmark", "adirtynurse"];
     
     streamArray.forEach(function(user) {
-      console.log("Log: " + user + " function start.");
-      var userString = "".concat("#",user);
       $.getJSON('https://wind-bow.gomix.me/twitch-api/streams/' + user + '?callback=?')
         .then(function(data){
-          console.log("Log: " + user + " Data gathered");
-          console.log(data);
           if(data.stream != null) {
-            console.log("Log: " + user + " Data, stream value");
-            console.log(data.stream);
+            var userString = "".concat("#",user);
+            var twitchLink = "".concat("https://go.twitch.tv/", user);
             $(userString).addClass("twitch-online");
-            console.log("Log: " + user + " Adding class twitch-online to id: " +userString);
+            $(userString).attr("href", twitchLink);
           };
         });
     });
