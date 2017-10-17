@@ -103,8 +103,8 @@ p {
 
 .twitch-online {
   filter: url(#drop-shadow-green) !important;
-  filter: drop-shadow(0px 0px 5px #00D10E) !important;
-  -webkit-filter: drop-shadow(0px 0px 5px #00D10E) !important;
+  filter: drop-shadow(0px 0px 3px #00D10E) !important;
+  -webkit-filter: drop-shadow(0px 0px 3px #00D10E) !important;
   -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='#00D10E')" !important;
 }
 
