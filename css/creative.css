@@ -11,7 +11,8 @@ html {
   height: 100%; }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif; }
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: black; }
 
 hr {
   max-width: 50px;
