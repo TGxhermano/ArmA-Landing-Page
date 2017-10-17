@@ -99,7 +99,7 @@
         .then(function(data){
           console.log("Log: " + user + " Data gathered");
           console.log(data);
-          if(data.stream == null) {
+          if(data.stream != null) {
             console.log("Log: " + user + " Data, stream value");
             console.log(data.stream);
             $(userString).addClass("twitch-online");
