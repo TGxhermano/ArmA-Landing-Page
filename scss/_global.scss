@@ -116,6 +116,13 @@ section {
   margin-top: 0;
 }
 
+.media-hr {
+  box-sizing: inherit;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(100, 100, 100, 0), rgba(100, 100, 100, 0.75), rgba(100, 100, 100, 0));
+}
+
 ::-moz-selection {
   color: white;
   background: $gray-darker;
