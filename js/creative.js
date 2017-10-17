@@ -94,7 +94,7 @@
     
     streamArray.forEach(function(user) {
       console.log("Log: " + user + " function start.");
-      var userString = "".concat(".",user);
+      var userString = "".concat("#",user);
       $.getJSON('https://wind-bow.gomix.me/twitch-api/streams/' + user + '?callback=?')
         .then(function(data){
           console.log("Log: " + user + " Data gathered");
