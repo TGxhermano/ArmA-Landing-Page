@@ -10,8 +10,6 @@
     <title>Tactical Gaming Arma</title>
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom fonts for this template -->
-    <!--<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
     <!-- Plugin CSS -->
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
     <!-- Custom styles for this template -->
@@ -19,7 +17,7 @@
   </head>
 
   <body id="page-top">
-    <!-- Navigation -->
+    <!-- NAVIGATION BAR -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,9 +31,12 @@
               <span class="nav-item navbar-left">
                 <a class="nav-link js-scroll-trigger" href="#community">Community</a>
               </span>
-              <span class="nav-item navbar-right">
+              <span class="nav-item navbar-left">
                 <a class="nav-link js-scroll-trigger" href="#media">Media</a>
               </span>
+              <span class="nav-item navbar-right">
+                  <a class="nav-link js-scroll-trigger" href="#channels">Channels</a>
+                </span>
               <span class="nav-item navbar-right">
                 <a class="nav-link js-scroll-trigger" href="#joinUs">Join us</a>
               </span>
@@ -43,15 +44,17 @@
         </div>
       </div>
     </nav>
+    <!-- HEADER - Full Page (masthead) -->
     <header class="masthead">
       <div id="header-content" class="header-content">
         <div id="header-content-inner" class="header-content-inner sr-mainLogo">
           <a class="js-scroll-trigger" href="#page-top">
-           <img class="img-fluid" id="mainLogo" src="img/logo.png">
+           <img class="img-fluid" id="mainLogo" src="img/bmp/tg_main_logo.png" alt="TG Main Logo">
           </a>
         </div>
       </div>
     </header>
+    <!-- ABOUT US SECTION -->
     <section class="bg-primary" id="about">
       <div class="container">
         <div class="row">
@@ -100,7 +103,7 @@
         </div>
       </div>
     </section>
-    <!--SVG Drop Shadow Filter-->
+    <!--SVG Drop Shadow Filter (for community icons)-->
     <svg height="0" xmlns="http://www.w3.org/2000/svg">
       <filter id="drop-shadow">
       <feGaussianBlur in="SourceAlpha" stdDeviation="2.2"/>
@@ -113,14 +116,14 @@
       </feMerge>
     </filter>
     </svg>
-
+    <!-- COMMUNITY SECTION -->
     <section id="community" class="pt-0">
       <div class="container">
         <div class="row">
-          <!--Discord Button-->
+          <!--Discord Button (as inline svg)-->
           <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 p-3">
             <div id="communityButton1" class="svg-icon m-auto sr-icons" role="tab">
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false" aria-controls="collapse1">                 
+              <a data-toggle="collapse" data-parent="#accordionCommunity" href="#collapse1" aria-expanded="false" aria-controls="collapse1">                 
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                   viewBox="0 0 2184 2500" xml:space="preserve" class="svg-logo">
                   <path d="M1928.156,0.172H255.852C114.822,0.172,0,114.986,0,257.261v1687.293c0,142.276,114.813,257.09,255.844,257.09h1415.232
@@ -143,10 +146,10 @@
               </a>
             </div>
           </div>
-          <!--Steam Button-->
+          <!--Steam Button (as inline svg)-->
           <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 p-3">
             <div id="communityButton2" class="svg-icon m-auto sr-icons" role="tab">
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">     
+              <a data-toggle="collapse" data-parent="#accordionCommunity" href="#collapse2" aria-expanded="false" aria-controls="collapse2">     
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
                   viewBox="-213.5 -352 1716 1652" xml:space="preserve" class="svg-logo">
                   <g>
@@ -187,10 +190,10 @@
               </a>
             </div>
           </div>
-          <!--Teamspeak 3 Button-->
+          <!--Teamspeak Button (as inline svg)-->
           <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 p-3">
             <div id="communityButton3" class="svg-icon m-auto sr-icons" role="tab">
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3"> 
+              <a data-toggle="collapse" data-parent="#accordionCommunity" href="#collapse3" aria-expanded="false" aria-controls="collapse3"> 
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                   viewBox="0 0 2500 2449" xml:space="preserve" class="svg-logo">
                   <g>
@@ -269,12 +272,12 @@
               </a>
             </div>
           </div>
-          <!--TG Button-->
+          <!--TG Button (as inline svg)-->
           <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 p-3">
             <div id="communityButton4" class="svg-icon m-auto sr-icons" role="tab">
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+              <a data-toggle="collapse" data-parent="#accordionCommunity" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 331 372" xml:space="preserve" class="svg-logo">
-                  <g id="T">
+                  <g>
                     <g>
                       <path d="M187.079,17.163l-7.337,36.038h-39.373l-48.05,243.135l-68.516-0.893L71.41,53.873H32.705l6.676-36.71H187.079
                         M207.889,0.163h-20.81H39.381H25.193l-2.538,13.958l-6.676,36.71l-3.645,20.042h20.37h18.028L7.124,292.156l-3.945,20.02
@@ -282,7 +285,7 @@
                         L207.889,0.163z"/>
                     </g>
                   </g>
-                  <g id="G_1_">
+                  <g>
                     <g>
                       <path d="M242.475,70.62c0.422,0,0.839,0.001,1.262,0.005c38.758,0.301,72.961,10.083,65.852,50.121
                         c-2.11,11.803-9.355,50.723-9.355,50.723l-63.022,0.152c0,0,9.974-53.273,10.523-57.247c0.476-3.38-4.598-5.844-9.842-5.844
@@ -308,11 +311,11 @@
     </section>
     <!--COMMUNITY POPUP SECTION-->
     <section id="community-popups" class="p-0">
-      <div id="accordion" role="tablist" aria-multiselectable="true">
-        <!--DISCORD CARD-->
+      <div id="accordionCommunity" role="tablist" aria-multiselectable="true">
+        <!--discord card-->
         <div class="card border-0">
             <div id="collapse1" class="collapse panel-color p-3" role="tabpanel" aria-labelledby="communityButton1">
-              <div class="card-block row pb-3 pt-1" style="background-image: linear-gradient(rgba(25,25,25,0.8),rgba(25,25,25,0.8)), url(img/discord_logo_bw.svg); background-repeat: no-repeat; background-position: center top;">
+              <div class="card-block row pb-3 pt-1" style="background-image: linear-gradient(rgba(25,25,25,0.8),rgba(25,25,25,0.8)), url(img/svg/discord_logo_bw.svg); background-repeat: no-repeat; background-position: center top;">
                 <div class="col-lg-6 text-xs-center text-sm-center text-md-center text-lg-right text-xl-right">
                   <h4 class="section-heading text-white">TG Arma Division on Discord</h4>
                   <div class="row">
@@ -325,77 +328,77 @@
                   </div>
                 </div>
                 <div class="col-lg-6 text-xs-center text-sm-center text-md-center text-lg-left text-xl-left">
-                  <img src="img/placeholder-discord_widget.png" class="img-fluid" alt="PLACEHOLDER: Discord Widget">
+                  <img src="img/bmp/placeholder-discord_widget.png" class="img-fluid" alt="PLACEHOLDER: Discord Widget">
                 </div>
               </div>
             </div>
         </div>
-        <!--STEAM CARD-->
+        <!--steam card-->
         <div class="card border-0">
-            <div id="collapse2" class="collapse panel-color p-3" role="tabpanel" aria-labelledby="communityButton2">
-              <div class="card-block row pb-3 pt-1" style="background-image: linear-gradient(rgba(25,25,25,0.8),rgba(25,25,25,0.8)), url(img/steam_logo_circle.svg); background-repeat: no-repeat; background-position: center top;">
-                <div class="col-lg-6 text-xs-center text-sm-center text-md-center text-lg-right text-xl-right">
-                  <h4 class="section-heading text-white">TG Arma Division on Steam Community</h4>
-                  <div class="row">
-                    <div class="col-lg-3"></div>
-                    <div class="col-lg-9">
-                      <p class="text-xs-center text-sm-center text-md-center text-lg-right text-xl-right">Visit our steam community page. Get intel on upcomming news, event schedules, mods and get TG members into your friends list.</p>
-                      <p><a href="http://steamcommunity.com/groups/TGARMASocialHub/members" target="_blank" class="text-white">TG Arma Steam Group!</a></p>
-                    </div>
+          <div id="collapse2" class="collapse panel-color p-3" role="tabpanel" aria-labelledby="communityButton2">
+            <div class="card-block row pb-3 pt-1" style="background-image: linear-gradient(rgba(25,25,25,0.8),rgba(25,25,25,0.8)), url(img/svg/steam_logo_bw.svg); background-repeat: no-repeat; background-position: center top;">
+              <div class="col-lg-6 text-xs-center text-sm-center text-md-center text-lg-right text-xl-right">
+                <h4 class="section-heading text-white">TG Arma Division on Steam Community</h4>
+                <div class="row">
+                  <div class="col-lg-3"></div>
+                  <div class="col-lg-9">
+                    <p class="text-xs-center text-sm-center text-md-center text-lg-right text-xl-right">Visit our steam community page. Get intel on upcomming news, event schedules, mods and get TG members into your friends list.</p>
+                    <p><a href="http://steamcommunity.com/groups/TGARMASocialHub/members" target="_blank" class="text-white">TG Arma Steam Group!</a></p>
                   </div>
                 </div>
-                <div class="col-lg-6 text-xs-center text-sm-center text-md-center text-lg-left text-xl-left">
-                  <img src="img/screen-steam_group.png" class="img-fluid" alt="TG Steam Group">
-                </div>
+              </div>
+              <div class="col-lg-6 text-xs-center text-sm-center text-md-center text-lg-left text-xl-left">
+                <img src="img/bmp/screen-steam_group.png" class="img-fluid" alt="TG Steam Group">
               </div>
             </div>
           </div>
-          <!--TEAMSPEAK CARD-->
-          <div class="card border-0">
-            <div id="collapse3" class="collapse panel-color p-3" role="tabpanel" aria-labelledby="communityButton3">
-              <div class="card-block row pb-3 pt-1" style="background-image: linear-gradient(rgba(25,25,25,0.8),rgba(25,25,25,0.8)), url(img/teamspeak_logo.svg); background-repeat: no-repeat; background-position: center top;">
+        </div>
+        <!--teamspeak card-->
+        <div class="card border-0">
+          <div id="collapse3" class="collapse panel-color p-3" role="tabpanel" aria-labelledby="communityButton3">
+            <div class="card-block row pb-3 pt-1" style="background-image: linear-gradient(rgba(25,25,25,0.8),rgba(25,25,25,0.8)), url(img/svg/teamspeak_logo_bw.svg); background-repeat: no-repeat; background-position: center top;">
+              <div class="col-lg-6 text-xs-center text-sm-center text-md-center text-lg-right text-xl-right">
+                <h4 class="section-heading text-white">TG Arma Division on Teamspeak</h4>
+                <div class="row">
+                  <div class="col-lg-3"></div>
+                  <div class="col-lg-9">
+                    <p class="text-xs-center text-sm-center text-md-center text-lg-right text-xl-right">Especially for Arma 3, Teamspeak is a very important tool to handle communications. We use the TFAR mod to tunnel radio and direct speech within one Teamspeak channel.
+                      Teamspeak is therefore needed to join our operations. <br>Our Teamspeak server is always populated during practice times or public operations.
+                    </p>
+                    <p><a href="ts3server://162.251.164.114?port=10004" target="_blank" class="text-white">Open TG Arma Teamspeak Adress!</a></p>
+                    <p><a href="https://www.teamspeak.com/en/downloads" target="_blank" class="text-white">Get Teamspeak!</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 text-xs-center text-sm-center text-md-center text-lg-left text-xl-left">
+                <img src="img/bmp/placeholder-ts_widget.png" class="img-fluid" alt="PLACEHOLDER: TS Widget" >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--tg card-->
+        <div class="card border-0">
+            <div id="collapse4" class="collapse panel-color p-3" role="tabpanel" aria-labelledby="communityButton4">
+              <div class="card-block row pb-3 pt-1" style="background-image: linear-gradient(rgba(25,25,25,0.8),rgba(25,25,25,0.8)), url(img/svg/tg_logo_bw.svg); background-repeat: no-repeat; background-position: center top;">
                 <div class="col-lg-6 text-xs-center text-sm-center text-md-center text-lg-right text-xl-right">
-                  <h4 class="section-heading text-white">TG Arma Division on Teamspeak</h4>
+                  <h4 class="section-heading text-white">Tactical Gaming Community Forums</h4>
                   <div class="row">
                     <div class="col-lg-3"></div>
                     <div class="col-lg-9">
-                      <p class="text-xs-center text-sm-center text-md-center text-lg-right text-xl-right">Especially for Arma 3, Teamspeak is a very important tool to handle communications. We use the TFAR mod to tunnel radio and direct speech within one Teamspeak channel.
-                        Teamspeak is therefore needed to join our operations. <br>Our Teamspeak server is always populated during practice times or public operations.
+                      <p class="text-xs-center text-sm-center text-md-center text-lg-right text-xl-right">The main page for all different game divisions - The big community forum.
+                        Feel free to pay us a visit. Once you have joined, more sections of the forum will be available for you.
                       </p>
-                      <p><a href="ts3server://162.251.164.114?port=10004" target="_blank" class="text-white">Open TG Arma Teamspeak Adress!</a></p>
-                      <p><a href="https://www.teamspeak.com/en/downloads" target="_blank" class="text-white">Get Teamspeak!</a></p>
+                      <p><a href="http://www.tacticalgaming.net/hq/" target="_blank" class="text-white">Tactical Gaming HQ</a></p>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-6 text-xs-center text-sm-center text-md-center text-lg-left text-xl-left">
-                  <img src="img/placeholder-ts_widget.png" class="img-fluid" alt="PLACEHOLDER: TS Widget" >
+                  <img src="img/bmp/screen-tg_forums.png" class="img-fluid" alt="TG Forums" >
                 </div>
               </div>
             </div>
           </div>
-          <!--TG CARD-->
-          <div class="card border-0">
-              <div id="collapse4" class="collapse panel-color p-3" role="tabpanel" aria-labelledby="communityButton4">
-                <div class="card-block row pb-3 pt-1" style="background-image: linear-gradient(rgba(25,25,25,0.8),rgba(25,25,25,0.8)), url(img/TG_letters_simple.svg); background-repeat: no-repeat; background-position: center top;">
-                  <div class="col-lg-6 text-xs-center text-sm-center text-md-center text-lg-right text-xl-right">
-                    <h4 class="section-heading text-white">Tactical Gaming Community Forums</h4>
-                    <div class="row">
-                      <div class="col-lg-3"></div>
-                      <div class="col-lg-9">
-                        <p class="text-xs-center text-sm-center text-md-center text-lg-right text-xl-right">The main page for all different game divisions - The big community forum.
-                          Feel free to pay us a visit. Once you have joined, more sections of the forum will be available for you.
-                        </p>
-                        <p><a href="http://www.tacticalgaming.net/hq/" target="_blank" class="text-white">Tactical Gaming HQ</a></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 text-xs-center text-sm-center text-md-center text-lg-left text-xl-left">
-                    <img src="img/screen-tg_forums.png" class="img-fluid" alt="TG Forums" >
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div> 
+      </div> 
     </section>
     <!-- MEDIA SECTION -->
     <section class="p-0 bg-primary" id="media">
@@ -410,22 +413,142 @@
         <div class="row no-gutter">
           <div class="col-lg-4 col-sm-6">
             <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pBTDqBtptxk?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pBTDqBtptxk?rel=0&amp;controls=1&amp;showinfo=0" allowfullscreen></iframe>
             </div>
           </div>
           <div class="col-lg-4 col-sm-6">
             <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5Ni6FnTHet4?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5Ni6FnTHet4?rel=0&amp;controls=1&amp;showinfo=0" allowfullscreen></iframe>
             </div>
           </div>
           <div class="col-lg-4 col-sm-6">
             <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/QoFeoidUYDA?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/QoFeoidUYDA?rel=0&amp;controls=1&amp;showinfo=0" allowfullscreen></iframe>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- CHANNELS SECTION -->
+    <section id="channels" class="pt-6">
+      <div class="container">
+        <div class="row">
+          <!--youtube Button (as inline svg)-->
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 p-3">
+            <div id="channelsButton1" class="svg-icon m-auto sr-icons" role="tab">
+              <a data-toggle="collapse" data-parent="#accordionChannels" href="#collapseaccordionChannels1" aria-expanded="false" aria-controls="collapse2-1">                 
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="267.629 492.5 1511.924 1064" xml:space="preserve" class="svg-logo">
+                  <g>
+                    <g>
+                      <path d="M1775.931,1021.167c0.002-114.85,0.002-236.491-25.783-348.697c-9.75-42.333-31.94-79.151-62.128-106.557v-0.001
+                        c-30.376-27.573-68.846-45.657-110.919-50.307c-91.447-10.235-183.723-15.387-276.305-17.97
+                        c-91.988-2.565-184.37-2.565-276.547-2.513c-92.164-0.053-184.54-0.053-276.54,2.513c-92.593,2.583-184.896,7.734-276.396,17.97
+                        c-42.033,4.651-80.486,22.744-110.834,50.33c-30.154,27.408-52.31,64.219-62.002,106.532
+                        c-13.084,56.721-19.703,115.899-23.047,175.445c-3.356,59.798-3.44,118.839-3.44,176.156c0,57.241,0.001,116.205,3.278,176.039
+                        c3.263,59.519,9.801,118.696,22.893,175.426c9.75,42.332,31.915,79.153,62.067,106.56c30.33,27.571,68.745,45.652,110.767,50.304
+                        c91.511,10.234,183.814,15.386,276.407,17.968c91.998,2.565,184.375,2.565,276.552,2.513
+                        c92.219,0.053,184.593,0.053,276.579-2.513c92.579-2.582,184.856-7.733,276.356-17.968c42.013-4.651,80.42-22.727,110.763-50.289
+                        c30.167-27.405,52.364-64.229,62.178-106.574c13.033-56.731,19.573-115.909,22.848-175.426
+                        c3.229-58.692,3.257-118.234,3.253-176.039h0.063v-2.902H1775.931z M1309.298,1024.073l-233.934,121.313
+                        c-77.865,40.369-155.733,80.728-233.936,121.236l-23.313,12.075V739.358l23.375,12.204
+                        c70.805,36.968,141.403,73.807,212.066,110.68c85.008,44.358,170.117,88.77,255.803,133.519l27.168,14.188L1309.298,1024.073z"/>
+                    </g>
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!--Twitch Button (as inline svg)-->
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 p-3">
+            <div id="channelsButton2" class="svg-icon m-auto sr-icons" role="tab">
+              <a data-toggle="collapse" data-parent="#accordionChannels" href="#collapseaccordionChannels2" aria-expanded="false" aria-controls="collapse2-2">     
+                <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="100 0 1592 1664" xml:space="preserve" class="svg-logo">
+                  <path d="M896,434v434H751V434H896z M1294,434v434h-145V434H1294z M1294,1194l253-254V145H353v1049h326v217l217-217H1294z M1692,0v1013l-434,434H932l-217,217H498v-217H100V289L209,0H1692z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--CHANNELS POPUP SECTION-->
+    <section id="channels-popups" class="p-0">
+      <div id="accordionChannels" role="tablist" aria-multiselectable="false">
+        <!--youtube card-->
+        <div class="card border-0">
+            <div id="collapseaccordionChannels1" class="collapse panel-color p-3" role="tabpanel" aria-labelledby="channelsButton1">
+              <div class="card-block row pb-3 pt-1" style="background-image: linear-gradient(rgba(25,25,25,0.8),rgba(25,25,25,0.8)), url(img/svg/youtube_logo_bw.svg); background-repeat: no-repeat; background-position: center top;">
+                <div class="col-lg-6 text-xs-center text-sm-center text-md-center text-lg-right text-xl-right">
+                  <h4 class="section-heading text-white">Youtube Channels</h4>
+                  <div class="row">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-9">
+                      <p class="text-xs-center text-sm-center text-md-center text-lg-right text-xl-right">
+                        Some members of TG Arma Division upload new footage regularly. Check out their channels.
+                        Also Tactical Gaming has an offical channel, on which other game divisions upload videos, too.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 text-xs-center text-sm-center text-md-center text-lg-left text-xl-left">
+                  <div class="row p-2">
+                    <div class="col-lg-2 p-0">
+                      <a href="https://www.youtube.com/channel/UCgeLRr23RZeaEZ77fGoaT_Q" target="_blank"><img src="img/bmp/channels_avatar-baycatone.jpg" class="img-fluid channelsAvatarImg" alt="BayCatOne"></a>
+                    </div>
+                    <div class="col-lg-5 align-self-center">
+                      <h5>BayCat</h5>
+                    </div>
+                  </div>
+                  <div class="row p-2">
+                    <div class="col-lg-2 p-0">
+                      <a href="https://www.youtube.com/user/Geelsmark" target="_blank"><img src="img/bmp/channels_avatar-geelsmark.jpg" class="img-fluid channelsAvatarImg" alt="Geelsmark"></a>
+                    </div>
+                    <div class="col-lg-5 align-self-center">
+                      <h5>Geelsmark</h5>
+                    </div>
+                  </div>
+                  <div class="row p-2">
+                      <div class="col-lg-2 p-0">
+                        <a href="" target="_blank"><img src="img/bmp/channels_avatar-dirty.jpg" class="img-fluid channelsAvatarImg" alt="Dirty"></a>
+                      </div>
+                      <div class="col-lg-5 align-self-center">
+                        <h5>Dirty</h5>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!--twitch card-->
+        <div class="card border-0">
+          <div id="collapseaccordionChannels2" class="collapse panel-color p-3" role="tabpanel" aria-labelledby="channelsButton2">
+            <div class="card-block row pb-3 pt-1" style="background-image: linear-gradient(rgba(25,25,25,0.8),rgba(25,25,25,0.8)), url(img/svg/twitch_logo_bw.svg); background-repeat: no-repeat; background-position: center top;">
+              <div class="col-lg-6 text-xs-center text-sm-center text-md-center text-lg-right text-xl-right">
+                <h4 class="section-heading text-white">Twitch Channels</h4>
+                <div class="row">
+                  <div class="col-lg-3"></div>
+                  <div class="col-lg-9">
+                    <p class="text-xs-center text-sm-center text-md-center text-lg-right text-xl-right">Visit the twitch channels some of our members run.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 text-xs-center text-sm-center text-md-center text-lg-left text-xl-left">
+                <p>CHANNEL-LIST: Twitch</p>
+                <p>CHANNEL-LIST: Twitch</p>
+                <p>CHANNEL-LIST: Twitch</p>
+                <p>CHANNEL-LIST: Twitch</p>
+                <p>CHANNEL-LIST: Twitch</p>
+                <p>CHANNEL-LIST: Twitch</p>
+                <p>CHANNEL-LIST: Twitch</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </section>
+    <!-- JOIN US SECTION -->
     <section class="bg-primary" id="joinUs">
       <div class="container">
         <div class="row">
@@ -438,19 +561,33 @@
         </div>
       </div>
     </section>
-    <section id="contact">
+    <!-- FOOTER SECTION -->
+    <footer id="contact">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading"></h2>
             <hr class="primary">
-            <p></p>
+            <p>© 2017 by bornasm &amp; hermano</p>
           </div>
         </div>
       </div>
-    </section>
-    <video playsinline autoplay muted loop poster="img/bg-littlebirds_fog.jpg" id="background-video">
-      <source src="media/bg-littlebirds_fog.mp4" type="video/mp4">-->
+    </footer>
+    <!-- SCROLL-TO-TOP BUTTON -->
+    <a class="js-scroll-trigger" href="#page-top">
+      <svg id="scrollToTopButton" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+        viewBox="170.531 19.781 48.531 48.563" xml:space="preserve">
+        <g>
+          <g>
+            <path d="M194.803,19.911c-13.354,0-24.179,10.825-24.179,24.179s10.825,24.179,24.179,24.179s24.179-10.825,24.179-24.179
+              S208.157,19.911,194.803,19.911z M206.432,52.192l-11.588-11.589l-11.7,11.701l-4.132-4.132l15.862-15.862l15.72,15.72
+              L206.432,52.192z"/>
+          </g>
+        </g>
+      </svg>
+    </a>
+    <!-- BACKGROUND VIDEO -->
+    <video playsinline autoplay muted loop poster="img/bmp/bg-littlebirds_fog.jpg" id="background-video">
+      <source src="media/bg-littlebirds_fog.mp4" type="video/mp4">
     </video>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>

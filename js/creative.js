@@ -68,11 +68,27 @@
     lastScroll = scrollTop;
   });
 
+  /* SCROLL-TO-TOP BUTTON */
+
+  // triggers button only if viewport bigger than 575px
+  if ($(window).width() >= 575) {
+  window.onscroll = function() {checkScrollToTopCurrentScroll()}; // triggers scroll distance to top check function
+  }
+
+  //show scroll-to-top-button only on certain scroll down threshold
+  function checkScrollToTopCurrentScroll() {
+      if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+          document.getElementById("scrollToTopButton").style.display = "block";
+      } else {
+          document.getElementById("scrollToTopButton").style.display = "none";
+      }
+  }
+
+  
   // Workaround for making the main logo load if user refreshed the page and is scrolled down for more than 300 pixels
   if($("#mainNav").offset().top > 300) {
     $(window).onload(function(){
   })};
-
 
   // Scroll reveal calls
   window.sr = ScrollReveal();
