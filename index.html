@@ -11,14 +11,18 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Plugin CSS -->
-
+    <link href="vendor/hamburgers/hamburgers.min.css" rel="stylesheet">
+    <link href="vendor/jquery.mmenu/jquery.mmenu.all.css" rel="stylesheet">
+    <link href="vendor/jquery.mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.css" rel="stylesheet">
+    <link href="vendor/jquery.mhead/jquery.mhead.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/creative.min.css" rel="stylesheet">
   </head>
 
   <body id="page-top">
-    <!-- NAVIGATION BAR -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="w-100 h-100 m-0 p-0" id="wholePage">
+          <!-- NAVIGATION BAR -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top d-none d-sm-none d-md-none d-lg-block d-xl-block" id="mainNav">
       <div class="container">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -41,6 +45,22 @@
         </div>
       </div>
     </nav>
+    
+    <div id="mobileNav" class="mh-head Sticky d-block d-sm-block d-md-block d-lg-none d-xl-none">
+      <span class="mh-btns-left">
+         <a id="mobileNavButton" class="mh-hamburger" href="#mobileMenu"></a>
+      </span>
+      <span class="mh-text">demo</span>
+    </div>
+
+   <nav id="mobileMenu" aria-hidden="true">
+      <ul>
+         <li><a href="/">Home</a></li>
+         <li><a href="/about/">About us</a></li>
+         <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </nav>
+  
     <!-- HEADER - Full Page (masthead) -->
     <header class="masthead">
       <div id="header-content" class="header-content">
@@ -655,6 +675,7 @@
     <video playsinline autoplay muted loop poster="img/bmp/background_video_fallback.png" id="background-video">
       <source src="media/background_video.mp4" type="video/mp4">
     </video>
+  </div>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
@@ -663,9 +684,15 @@
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/jquery.mmenu/jquery.mmenu.all.js"></script>
+    <script src="vendor/jquery.mmenu/wrappers/bootstrap/jquery.mmenu.bootstrap.js"></script>
+    <script src="vendor/jquery.mhead/jquery.mhead.js"></script>
+    
 
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
+		
+    
   </body>
 
 </html>
