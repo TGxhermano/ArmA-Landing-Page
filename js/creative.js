@@ -140,13 +140,14 @@
       "extensions": [
         "theme-dark"
       ],
-      "pageScroll": true
-    }, {
-      // configuration
+      "pageScroll": true,
       "offCanvas": {
-         pageSelector: "#wholePage"
-      }
-    }),
+        "pageSelector": "#wholePage",
+        "zposition": "front"
+     }
+    }
+      // configuration
+    ),
     $("#mobileNav").mhead({
       // options
       hamburger: {
