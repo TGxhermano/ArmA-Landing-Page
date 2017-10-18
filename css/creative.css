@@ -5,6 +5,7 @@
  */
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
+/*<><><> GLOBAL <><><>*/
 body,
 html {
   width: 100%;
@@ -12,7 +13,8 @@ html {
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  background-color: #000; }
+  background-color: #000;
+  -webkit-tap-highlight-color: #242424; }
 
 hr {
   max-width: 50px;
@@ -43,6 +45,28 @@ p {
   line-height: 1.5;
   margin-bottom: 20px; }
 
+section {
+  padding: 30px 0; }
+
+::-moz-selection {
+  color: white;
+  background: #242424;
+  text-shadow: none; }
+
+::selection {
+  color: white;
+  background: #242424;
+  text-shadow: none; }
+
+img::selection {
+  color: white;
+  background: transparent; }
+
+img::-moz-selection {
+  color: white;
+  background: transparent; }
+
+/*..... CLASSES ......*/
 .bg-primary {
   background-color: #021B44 !important; }
 
@@ -95,9 +119,6 @@ p {
   -webkit-filter: drop-shadow(0px 0px 3px #00D10E) !important;
   -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='#00D10E')" !important; }
 
-section {
-  padding: 30px 0; }
-
 .section-heading {
   margin-top: 0; }
 
@@ -107,28 +128,26 @@ section {
   height: 1px;
   background-image: linear-gradient(to right, rgba(100, 100, 100, 0), rgba(100, 100, 100, 0.75), rgba(100, 100, 100, 0)); }
 
-::-moz-selection {
-  color: white;
-  background: #242424;
-  text-shadow: none; }
+.channelsAvatarImg {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  max-width: 4em;
+  border-radius: 50%;
+  filter: url(#drop-shadow-black);
+  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.5));
+  -webkit-filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.5));
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')"; }
 
-::selection {
-  color: white;
-  background: #242424;
-  text-shadow: none; }
+.channelsAvatarImg:hover {
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3); }
 
-img::selection {
-  color: white;
-  background: transparent; }
-
-img::-moz-selection {
-  color: white;
-  background: transparent; }
-
-body {
-  -webkit-tap-highlight-color: #242424; }
-
-#background-video {
+/* ###### ID's ###### */
+#backgroundVideo {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -136,12 +155,22 @@ body {
   min-height: 100%;
   width: auto;
   height: auto;
-  z-index: -100;
+  z-index: -10;
   -ms-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   background-size: cover; }
+
+#backgroundVideoOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: repeat;
+  z-index: -9;
+  opacity: 0.1; }
 
 #mainLogo {
   -webkit-transition: all 0.2s;
@@ -154,7 +183,7 @@ body {
   transform-origin: center top; }
 
 #header-content {
-  z-index: 10000;
+  z-index: 1030;
   position: relative; }
 
 #scrollToTopButton {
@@ -184,24 +213,6 @@ body {
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1); }
-
-.channelsAvatarImg {
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  transition: all 0.2s;
-  max-width: 4em;
-  border-radius: 50%;
-  filter: url(#drop-shadow-black);
-  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.5));
-  -webkit-filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.5));
-  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')"; }
-
-.channelsAvatarImg:hover {
-  transform: scale(1.3);
-  -webkit-transform: scale(1.3);
-  -moz-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  -o-transform: scale(1.3); }
 
 .navbar-left {
   -webkit-transition: all 0.2s;
