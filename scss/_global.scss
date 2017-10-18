@@ -99,6 +99,7 @@ img::-moz-selection {
   @include transition-all;
   fill: $gray-slightly-lighter;
 }
+
 .svg-icon:hover .svg-logo {
   fill: lighten($gray-lighter, 10%);
 
