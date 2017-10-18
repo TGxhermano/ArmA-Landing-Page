@@ -30,8 +30,6 @@
     "hamburgers": "^0.9.1",
     "jquery": "^3.2.1",
     "jquery.easing": "^1.4.1",
-    "jquery.mhead": "^1.0.1",
-    "jquery.mmenu": "^6.1.8",
     "popper.js": "^1.12.5",
     "scrollreveal": "3.3.6"
   },

@@ -133,28 +133,4 @@
     scale: 0.3,
     distance: '0px'
   });
-
-  
-  $(document).ready(function() {
-    $("#mobileMenu").mmenu({
-      "extensions": [
-        "theme-dark"
-      ],
-      "pageScroll": true,
-      "offCanvas": {
-        "pageSelector": "#wholePage",
-        "zposition": "front"
-     }
-    }
-      // configuration
-    ),
-    $("#mobileNav").mhead({
-      // options
-      hamburger: {
-        menu: "#mobileMenu"
-      }
-   })
-
- });
-
 })(jQuery); // End of use strict
