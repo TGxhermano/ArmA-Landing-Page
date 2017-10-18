@@ -139,7 +139,8 @@
     $("#mobileMenu").mmenu({
       "extensions": [
         "theme-dark"
-      ]
+      ],
+      "pageScroll": true
     }, {
       // configuration
       "offCanvas": {
