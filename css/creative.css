@@ -185,19 +185,6 @@ body {
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1); }
 
-#firstBattalionBg {
-  background-color: transparent !important;
-  background-image: url("img/bmp/flag_us.png");
-  background-repeat: no-repeat;
-  background-position: left top;
-  -moz-background-size: 30%;
-  -webkit-background-size: 30%;
-  background-size: 30%; }
-
-#secondBattalionBg {
-  background-image: url(img/bmp/flag_eu.png);
-  background-repeat: no-repeat; }
-
 .channelsAvatarImg {
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
