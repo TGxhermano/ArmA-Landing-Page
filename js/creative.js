@@ -134,5 +134,25 @@
     distance: '0px'
   });
 
+  
+  $(document).ready(function() {
+    $("#mobileMenu").mmenu({
+      "extensions": [
+        "theme-dark"
+      ]
+    }, {
+      // configuration
+      "offCanvas": {
+         pageSelector: "#wholePage"
+      }
+    }),
+    $("#mobileNav").mhead({
+      // options
+      hamburger: {
+        menu: "#mobileMenu"
+      }
+   })
+
+ });
 
 })(jQuery); // End of use strict
