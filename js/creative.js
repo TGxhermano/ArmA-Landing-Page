@@ -102,8 +102,9 @@
         .then(function(data){
           if(data.stream != null) {
             var userString = "".concat("#",user);
+            var userImgString = userString.concat("-img");
             var twitchLink = "".concat("https://go.twitch.tv/", user);
-            $(userString).addClass("twitchOnline");
+            $(userImgString).addClass("twitchOnline");
             $(userString).attr("href", twitchLink);
           };
         });
