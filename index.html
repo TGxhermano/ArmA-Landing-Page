@@ -11,15 +11,14 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Plugin CSS -->
-
+    <link href="vendor/hamburgers/hamburgers.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/creative.min.css" rel="stylesheet">
   </head>
 
   <body id="page-top">
-    <div class="w-100 h-100 m-0 p-0" id="wholePage">
     <!-- NAVIGATION BAR -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top d-block d-sm-block d-md-block d-lg-block d-xl-block" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top d-none d-sm-none d-md-none d-lg-block d-xl-block" id="mainNav">
       <div class="container">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -43,6 +42,35 @@
       </div>
     </nav>
   
+    <!-- MOBILE NAVIGATION BAR - WORK IN PROGRESS-->
+<!-- 
+    <nav class="fixed-top d-block d-sm-block d-md-block d-lg-none d-xl-none h-100" id="mobileNav">
+      <div class="container" id="mobileNavHeader">
+        <button class="hamburger hamburger--collapse" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+      
+        <div class="d-block h-100">
+          <span class="navbar-nav w-50 h-100" id="mobileNavMenu">
+              <span class="nav-link p-3">
+                <a class="js-scroll-trigger text-faded" href="#about">About us</a>
+              </span>
+              <span class="nav-link p-3">
+                <a class="js-scroll-trigger text-faded" href="#community">Community</a>
+              </span>
+              <span class="nav-link p-3">
+                <a class="js-scroll-trigger text-faded" href="#media">Media</a>
+              </span>
+              <span class="nav-link p-3">
+                <a class="js-scroll-trigger text-faded" href="#joinUs">Join us</a>
+              </span>
+          </span>
+        </div>
+    </nav>
+  -->
     <!-- HEADER - Full Page (masthead) -->
     <header class="masthead">
       <div id="header-content" class="header-content">
@@ -671,7 +699,6 @@
         <polygon points="829.904,531.502 640.312,341.894 448.889,533.335 381.286,465.732 640.802,206.214 897.998,463.407 "/>
       </svg>
     </a>
-  </div>
   <!-- BACKGROUND VIDEO PATTERN OVERLAY -->
   <div id="backgroundVideoOverlay" style="background-image: url(img/bmp/pattern-line_6x6.png);"></div>
   <!-- BACKGROUND VIDEO -->

@@ -82,6 +82,9 @@ gulp.task('copy', function() {
 
   gulp.src(['node_modules/popper.js/dist/umd/popper.js', 'node_modules/popper.js/dist/umd/popper.min.js'])
     .pipe(gulp.dest('vendor/popper'))
+
+  gulp.src(['node_modules/hamburgers/dist/hamburgers.css', 'node_modules/hamburgers/dist/hamburgers.min.css'])
+    .pipe(gulp.dest('vendor/hamburgers'))
 })
 
 // Default task
