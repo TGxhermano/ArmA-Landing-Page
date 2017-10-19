@@ -101,9 +101,9 @@
       $.getJSON('https://wind-bow.gomix.me/twitch-api/streams/' + user + '?callback=?')
         .then(function(data){
           if(data.stream != null) {
-            var userString = "".concat("#",user);
+            var userString = "#".concat(user);
             var userImgString = userString.concat("-img");
-            var twitchLink = "".concat("https://go.twitch.tv/", user);
+            var twitchLink = "https://go.twitch.tv/".concat(user);
             $(userImgString).addClass("twitchOnline");
             $(userString).attr("href", twitchLink);
           };
