@@ -103,7 +103,7 @@
           if(data.stream != null) {
             var userString = "".concat("#",user);
             var twitchLink = "".concat("https://go.twitch.tv/", user);
-            $(userString).addClass("twitch-online");
+            $(userString).addClass("twitchOnline");
             $(userString).attr("href", twitchLink);
           };
         });
