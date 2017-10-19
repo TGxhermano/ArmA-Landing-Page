@@ -169,33 +169,6 @@
       </div>
       </div>
     </section>
-    <!--DROP SHADOW FILTER for community&channels icons-->
-    <svg height="0" xmlns="http://www.w3.org/2000/svg">
-      <filter id="drop-shadow-black">
-      <feGaussianBlur in="SourceAlpha" stdDeviation="2.2"/>
-      <feOffset dx="12" dy="12" result="offsetblur"/>
-      <feFlood flood-color="rgba(0,0,0,0.5)"/>
-      <feComposite in2="offsetblur" operator="in"/>
-      <feMerge>
-      <feMergeNode/>
-      <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    </svg>
-    <!-- DROP SHADOW FILTER for twitch-broadcast-on buttons -->
-    <!-- !!!!!!! obsolete because now box-shadow animation is in place
-    <svg height="0" xmlns="http://www.w3.org/2000/svg">
-      <filter id="drop-shadow-green">
-      <feGaussianBlur in="SourceAlpha" stdDeviation="2.2"/>
-      <feOffset dx="0" dy="0" result="offsetblur"/>
-      <feFlood flood-color="#00D10E"/>
-      <feComposite in2="offsetblur" operator="in"/>
-      <feMerge>
-      <feMergeNode/>
-      <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    </svg>-->
     <!-- COMMUNITY SECTION -->
     <section id="community" class="pt-0">
       <div class="container">
@@ -483,11 +456,10 @@
       </div> 
     </section>
     <!-- MEDIA SECTION -->
-    <section class="p-0 bg-primary" id="media">
+    <section class="pt-4 bg-primary" id="media">
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-10 mx-auto">
-            <br>
             <h2 class="section-heading text-white text-center">MEDIA</h2>
             <hr class="light">
           </div>
@@ -670,7 +642,7 @@
       </div> 
     </section>
     <!-- JOIN US SECTION -->
-    <section class="bg-primary" id="joinUs">
+    <section class="bg-primary py-4" id="joinUs">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">

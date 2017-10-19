@@ -107,7 +107,6 @@ img::-moz-selection {
   -ms-transform:scale(1.5); 
   -o-transform:scale(1.5);
 
-  filter: url(#drop-shadow-black);
   filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
   -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
   -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
@@ -180,7 +179,6 @@ img::-moz-selection {
   @include transition-all;
   max-width: 4em;
   border-radius: 50%;
-  filter: url(#drop-shadow-black);
   filter: drop-shadow(3px 3px 5px rgba(0,0,0,0.5));
   -webkit-filter: drop-shadow(3px 3px 5px rgba(0,0,0,0.5));
   -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
@@ -250,7 +248,6 @@ img::-moz-selection {
   fill: $gray-slightly-lighter;
   opacity: 0.80;
   cursor: pointer;
-  filter: url(#drop-shadow-black);
   filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
   -webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
   -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
