@@ -294,8 +294,8 @@ img::-moz-selection {
   -o-transform: translateX(100px); }
 
 #mainNav {
-  border-color: rgba(36, 36, 36, 0.05);
-  background-color: white;
+  border-color: #b3b3b3;
+  background-color: #787878;
   font-family: 'Roboto', sans-serif;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
@@ -311,19 +311,19 @@ img::-moz-selection {
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #242424; }
+    color: #b3b3b3; }
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus,
   #mainNav .navbar-nav > li.nav-item > a.nav-link {
     font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #242424; }
+    color: #b3b3b3; }
     #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover,
     #mainNav .navbar-nav > li.nav-item > a.nav-link:hover {
       color: #021B44; }
     #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active,
     #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-      color: white !important;
+      color: #b3b3b3 !important;
       background-color: transparent; }
       #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover,
       #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
@@ -333,7 +333,7 @@ img::-moz-selection {
     font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #242424; }
+    color: #b3b3b3; }
     #mainNav .navbar-nav span.nav-item a.nav-link:focus:hover,
     #mainNav .navbar-nav span.nav-item a.nav-link:hover {
       color: #021B44; }
