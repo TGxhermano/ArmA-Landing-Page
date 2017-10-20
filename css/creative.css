@@ -171,9 +171,6 @@ img::-moz-selection {
 .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
   background-color: #254B82; }
 
-.card-block {
-  width: 100%; }
-
 /* ###################*/
 /* ###### ID's ###### */
 /* ###################*/
@@ -554,3 +551,6 @@ header.masthead {
 
 .btn-xl {
   padding: 15px 30px; }
+
+.card-block {
+  width: 100%; }
