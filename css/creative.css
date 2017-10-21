@@ -71,17 +71,14 @@ img::-moz-selection {
 .bg-primary {
   background: #021B44 !important; }
 
-/*
-@media (min-width: 992px) 
-{ 
+@media (min-width: 992px) {
   .bg-primary {
-  background: $theme-primary !important;
-    background: -moz-linear-gradient(left, $theme-primary-darken 0%, $theme-primary 50%, $theme-primary-darken 100%) !important;
-    background: -webkit-linear-gradient(left, $theme-primary-darken 0%, $theme-primary 50%, $theme-primary-darken 100%) !important;
-    background: linear-gradient(to right, $theme-primary-darken 0%, $theme-primary 50%, $theme-primary-darken 100%) !important;
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$theme-primary-darken', endColorstr='$theme-primary-darken',GradientType=1 ) !important; 
-  }
-}*/
+    background: #021B44 !important;
+    background: -moz-linear-gradient(left, transparent 0%, #021B44 15%, #021B44 85%, transparent 100%) !important;
+    background: -webkit-linear-gradient(left, transparent 0%, #021B44 15%, #021B44 85%, transparent 100%) !important;
+    background: linear-gradient(to right, transparent 0%, #021B44 15%, #021B44 85%, transparent 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$theme-primary-darken', endColorstr='$theme-primary-darken',GradientType=1 ) !important; } }
+
 .bg-dark {
   color: white;
   background-color: #242424 !important; }
