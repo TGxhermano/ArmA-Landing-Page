@@ -82,10 +82,6 @@ img::-moz-selection {
     background: linear-gradient(to right, #010d21 0%, #021B44 50%, #010d21 100%) !important;
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$theme-primary-darken', endColorstr='$theme-primary-darken',GradientType=1 ) !important; } }
 
-.bg-dark {
-  color: white;
-  background-color: #242424 !important; }
-
 .text-faded {
   color: rgba(255, 255, 255, 0.7); }
 
@@ -308,7 +304,7 @@ img::-moz-selection {
 
 #mainNav {
   border-color: rgba(36, 36, 36, 0.05);
-  background-color: white;
+  background-color: #191919;
   font-family: 'Roboto', sans-serif;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
@@ -330,10 +326,10 @@ img::-moz-selection {
     font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #242424; }
+    color: rgba(255, 255, 255, 0.7); }
     #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover,
     #mainNav .navbar-nav > li.nav-item > a.nav-link:hover {
-      color: #021B44; }
+      color: white; }
     #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active,
     #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
       color: white !important;
@@ -346,10 +342,10 @@ img::-moz-selection {
     font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #242424; }
+    color: rgba(255, 255, 255, 0.7); }
     #mainNav .navbar-nav span.nav-item a.nav-link:focus:hover,
     #mainNav .navbar-nav span.nav-item a.nav-link:hover {
-      color: #021B44; }
+      color: white; }
     #mainNav .navbar-nav span.nav-item a.nav-link:focus.active,
     #mainNav .navbar-nav span.nav-item a.nav-link.active {
       color: white !important;

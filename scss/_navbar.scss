@@ -35,7 +35,7 @@
 
 #mainNav {
   border-color: fade-out($gray-darker, .95);
-  background-color: white;
+  background-color: #191919;
   @include sans-serif-font;
   @include transition-all;
   .navbar-brand {
@@ -61,9 +61,9 @@
         font-size: 13px;
         font-weight: 700;
         text-transform: uppercase;
-        color: $gray-darker;
+        color: fade-out(white, .3);
         &:hover {
-          color: $theme-primary;
+          color: white;
         }
         &.active {
           color: white !important;
@@ -80,9 +80,9 @@
         font-size: 13px;
         font-weight: 700;
         text-transform: uppercase;
-        color: $gray-darker;
+        color: fade-out(white, .3);
         &:hover {
-          color: $theme-primary;
+          color: white;
         }
         &.active {
           color: white !important;
