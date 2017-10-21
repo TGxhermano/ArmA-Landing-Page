@@ -209,7 +209,7 @@ img::-moz-selection {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAE0lEQVQImWNgYGD4jwVjBxSoBAD6ig7yjlXMAAAAAABJRU5ErkJggg==);
   background-repeat: repeat;
   z-index: -9;
-  opacity: 0.2; }
+  opacity: 0.3; }
 
 #mainLogo {
   -webkit-transition: all 0.2s;
