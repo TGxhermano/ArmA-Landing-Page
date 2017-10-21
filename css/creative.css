@@ -69,7 +69,15 @@ img::-moz-selection {
 /*..... CLASSES ......*/
 /*....................*/
 .bg-primary {
-  background-color: #021B44 !important; }
+  background: #021B44;
+  background: -moz-linear-gradient(left, #010712 0%, #021B44 50%, #010712 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #010712 0%, #021B44 50%, #010712 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #010712 0%, #021B44 50%, #010712 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$theme-primary-darken', endColorstr='$theme-primary-darken',GradientType=1 );
+  /* IE6-9 */ }
 
 .bg-dark {
   color: white;
