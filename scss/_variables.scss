@@ -5,6 +5,8 @@
 $theme-primary: #021B44;
 $theme-primary-darken: darken($theme-primary, 7%);
 $background-color: #000;
+$panel-background-color: #191919;
+$panel-background-color-darken: darken($panel-background-color, 5%);
 
 $gray-base: #000 !default;
 $gray-darker: lighten($gray-base, 14%) !default;
