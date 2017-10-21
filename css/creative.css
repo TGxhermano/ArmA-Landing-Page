@@ -68,17 +68,20 @@ img::-moz-selection {
 /*....................*/
 /*..... CLASSES ......*/
 /*....................*/
-@media (max-width: 991px) {
+.bg-primary {
+  background: #021B44 !important; }
+
+/*
+@media (min-width: 992px) 
+{ 
   .bg-primary {
-    background: #021B44 !important; } }
-
-@media (min-width: 992px) {
-  background: #021B44 !important;
-  background: -moz-linear-gradient(left, #010712 0%, #021B44 50%, #010712 100%) !important;
-  background: -webkit-linear-gradient(left, #010712 0%, #021B44 50%, #010712 100%) !important;
-  background: linear-gradient(to right, #010712 0%, #021B44 50%, #010712 100%) !important;
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$theme-primary-darken', endColorstr='$theme-primary-darken',GradientType=1 ) !important; }
-
+  background: $theme-primary !important;
+    background: -moz-linear-gradient(left, $theme-primary-darken 0%, $theme-primary 50%, $theme-primary-darken 100%) !important;
+    background: -webkit-linear-gradient(left, $theme-primary-darken 0%, $theme-primary 50%, $theme-primary-darken 100%) !important;
+    background: linear-gradient(to right, $theme-primary-darken 0%, $theme-primary 50%, $theme-primary-darken 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$theme-primary-darken', endColorstr='$theme-primary-darken',GradientType=1 ) !important; 
+  }
+}*/
 .bg-dark {
   color: white;
   background-color: #242424 !important; }
