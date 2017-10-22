@@ -2,9 +2,29 @@
   "use strict"; // Start of use strict
 
   // refreshed/onload -> page scroll to top
-  /*window.onbeforeunload = function () {
+  window.onbeforeunload = function () {
     window.scrollTo(0, 0);
-  }*/
+  }
+  // screen width change -> reload page (workaround for mobil devices on screen orientation change, otherwise might mess up logo animation)
+  window.addEventListener('resize', function () { 
+    window.location.reload(); 
+  });
+
+  //TG QUOTES - STUPID RANDOM CONSOL LOGGER
+  var tgQuoteArray = ["PLACE QUOTES AT END IN THIS ARRAY", "'Fak Siss!' - Nazman", "'Cool for cats!' - Everest78", "'Sir, can I pack additional ammo from the....!' - Dayton Marks", "'First of first...!' - Nazman"];
+  var tgQuoteArrayRandom = 1;
+  var tgQuoteArrayEnd = tgQuoteArray.length;
+  setInterval(logRandomTgQuote, 3000);
+  function logRandomTgQuote() {
+    var tgQuoteArrayRandomNew = Math.floor(Math.random() * (tgQuoteArrayEnd - 1)) + 1;
+    if (tgQuoteArrayRandom != tgQuoteArrayRandomNew) {
+      console.log (tgQuoteArray[tgQuoteArrayRandomNew]);
+      tgQuoteArrayRandom = tgQuoteArrayRandomNew;
+    }
+    else {
+      logRandomTgQuote();
+    }
+  }
 
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
@@ -33,8 +53,7 @@
   
   /* MAIN LOGO ANIMATION & NAVBAR SHRINK/ITEM MOVEMENT*/
 
-  // Docks button only if viewport is 991px or bigger (Bootstrap md media query)
-
+  // Docks button only if viewport is 992px or bigger (Bootstrap md media query)
   if ($(window).width() >= 992) {
 
     var lastScroll = 0;
@@ -91,9 +110,9 @@
 
   /* TWITCH ONLINE CHECK */
 
-  //Twitch channel names go here
+  //Twitch channel names go in the array
   //Must be string
-  //ID of index.html element must be the same as twitch name
+  //ID in index.html element must be the same as twitch name
 
     var streamArray = ["tgxhermano", "geelsmark", "adirtynurse"];
     
