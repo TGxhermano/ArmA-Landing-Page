@@ -5,7 +5,7 @@
   window.onbeforeunload = function () {
     window.scrollTo(0, 0);
   }
-  // screen width change -> reload page (workaround for mobil devices on screen orientation change, otherwise might mess up logo animation)
+  // device orientation change -> reload page (workaround for mobil devices on screen orientation change, otherwise might mess up logo animation)
   window.addEventListener('orientationchange', function () { 
     window.location.reload(true); 
   });
