@@ -7,11 +7,11 @@
   }
   // screen width change -> reload page (workaround for mobil devices on screen orientation change, otherwise might mess up logo animation)
   window.addEventListener('resize', function () { 
-    window.location.reload(); 
+    window.location.reload(true); 
   });
 
   //TG QUOTES - STUPID RANDOM CONSOL LOGGER
-  var tgQuoteArray = ["PLACE QUOTES AT END IN THIS ARRAY", "'Fak Siss!' - Nazman", "'Cool for cats!' - Everest78", "'Sir, can I pack additional ammo from the....!' - Dayton Marks", "'First of first...!' - Nazman"];
+  var tgQuoteArray = ["PLACE QUOTES AT END IN THIS ARRAY", "'Fak Siss!' - Nazman", "'Cool for cats!' - Everest78", "'Sir, can I pack additional ammo....!' - Dayton Marks", "'First of first...!' - Nazman"];
   var tgQuoteArrayRandom = 1;
   var tgQuoteArrayEnd = tgQuoteArray.length;
   setInterval(logRandomTgQuote, 3000);
