@@ -217,6 +217,13 @@ img::-moz-selection {
   background-color: #254B82;
 }*/
 
+.videoSectionBgFade {
+  background: -moz-linear-gradient(left, $theme-primary-darken 0%, $theme-primary 25%, $theme-primary 75%, $theme-primary-darken 100%) !important;
+  background: -webkit-linear-gradient(left, $theme-primary-darken 0%, $theme-primary 25%, $theme-primary 75%, $theme-primary-darken 100%) !important;
+  background: linear-gradient(to right, $theme-primary-darken 0%, $theme-primary 25%, $theme-primary 75%, $theme-primary-darken 100%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$panel-background-color-darken', endColorstr='$panel-background-color-darken',GradientType=1 ) !important; 
+}
+
 
 /* ###################*/
 /* ###### ID's ###### */
