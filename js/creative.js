@@ -11,7 +11,7 @@
   });
 
   //TG QUOTES - STUPID RANDOM CONSOL LOGGER
-  var tgQuoteArray = ["PLACE QUOTES AT END IN THIS ARRAY", "'Fak Siss!' - Nazman", "'Cool for cats!' - Everest78", "'Sir, can I pack additional ammo....!' - Dayton Marks", "'First of first...!' - Nazman"];
+  var tgQuoteArray = ["PLACE QUOTES AT END IN THIS ARRAY", "'Fak Siss!' - Nazman", "'Cool for cats!' - Everest78", "'Sir, can I pack additional ammo....!' - Dayton Marks", "'First of first...!' - Nazman", "'Should we put an alpha layer on it?' - hermano", "'I don't like alpha' - Bornasm", "'unintelligible grumble' - Keller"];
   var tgQuoteArrayRandom = 1;
   var tgQuoteArrayEnd = tgQuoteArray.length;
   setInterval(logRandomTgQuote, 3000);
